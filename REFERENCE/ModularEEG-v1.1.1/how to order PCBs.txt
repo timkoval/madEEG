@@ -1,0 +1,36 @@
+PCB's are ordered from Olimex, located in Bulgaria.
+
+This file contains ordering information for v1.1.
+It is the latest version sent to Olimex for manufacture.
+
+Price: (not including shipping): $23.40
+
+Olimex charges for inital processing of the layouts. When a new revision of the ModularEEG is released, the price is $5 higher for the first person to order.
+
+To order a set (1 analog + 1 digital) of PCBs, send an e-mail to Olimex <fastpcb@olimex.com> with the following info:
+
+  Reference number: AR180903A
+  Name:
+  Email:
+  Shipping address:
+  Shipping option: Airmail
+
+In return, you receive an e-mail with an order form in PDF format, which you should print, fill out, and fax back to them.
+
+When the PCBs are shipped you will receive a notification e-mail. After that, delivery takes one to two weeks to most places.
+
+Notes:
+
+* If you already have a ModularEEG and want to add more channels, the Olimex reference number for a set of two analog boards is AR180903B.
+
+* You will need a credit card (e.g VISA) so that they can charge you. Do *not* put the number in your e-mail. That is what the fax is for.
+
+* You need to use a non-anonymous e-mail address, (i.e not Yahoo, Hotmail etc) because they have had trouble with credit card fraud.
+
+See the Olimex web-site for shipping prices and other shipping options.
+
+  http://olimex.com/pcb.html
+
+Airmail costs $5 to destinations within Europe, and $8 to the rest of the world.
+
+In short: Total cost will be max ~ $37 for whoever orders first, including $8 airmail. On reorders ~ $32.

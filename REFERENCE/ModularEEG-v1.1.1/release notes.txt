@@ -1,0 +1,197 @@
+Release Notes
+-------------
+
+To view the schematics and board layouts (.sch and .brd files),
+download Eagle CAD from www.cadsoft.de
+Eagle CAD runs on Linux as well as Windows.
+
+Programming software and firmware info: see the ModularEEG zip-file.
+
+Extras not included in the bill of materials:
+
+* 34-pin ribbon cable (10-20cm of an old floppy-drive cable should work).
+* Programming cable matching the 10-pin header on the ModularEEG. (see .zip file)
+* Passthrough serial cable, and female DSUB connector.
+
+* Battery connectors
+* Battery
+
+* Electrode connectors
+* Electrodes
+* Electrode cables
+* Electrode paste and other accessories
+
+* Optional: Enclosures.
+
+It is recommended that you place the amplifier in a metal case, to reduce
+electromagnetic interference.
+
+You should NOT place the digital board in a metal case, because you can very
+easily ruin the electrical isolation unless you know what you are doing.
+
+
+
+Important postprocessing before making the modEEG pcbs
+
+
+The modEEG pcbs are double sided with (plated through) vias and make heavy
+use of "copper pouring".
+
+Therefore the EAGLE *.brd files have to be postprocessed before printing in
+the EAGLE CAD software with the "ratsnest" command.
+
+Make sure Menu->options->set->misc->"Ratsnest processes polygones" is checked.
+
+If the option is unchecked or no ratsnest is done, you do not get all the
+important electrical connections that are implicitly done by the large so
+called "copper pouring" polygons and the plated through vias - that are
+electrical vertical connections from top to bottom layer.
+
+Instead with "ratsnest" you get many thin yellow air-wires that indicate
+missing connections between nodes (pins, pads) and would have to be soldered
+manually if you should decide to use no copper pouring (what would be
+absolutely no good idea!).
+
+The openEEG developer teams decision to use double layer and copper pouring is
+well founded, because it is essential for reduction of RF interference and
+mains hum capacitively coupled into the circuit.
+
+A modEEG built from pcbs without copper pouring after manual fixing all not
+routed airwires (on both pcbs) will probably have sub optimal electrical
+characteristics and performance (more noise and hum).
+
+
+Change Log
+----------
+v1.1.1 - changes from v1.1.0
+* Added postprocessing information to the release notes
+
+v1.1.0 - changes from v1.0.0
+
+* Replaced 10nF 5% capacitors with 1nF ceramic to increase AA-filter stability.
+* Added placement markings for the 1uF caps on the amplifier board.
+* Replaced Newark part number for 1MOhm resistors.
+* Swapped top and bottom layers on the amplifier board.
+* Added Newark part number for 22uH inductors.
+* Added Olimex reference number for two analog boards (v1.0.0 layout)
+* Added two mounting holes to the amplifier board
+* Rewrote EEG connector labels
+* Moved some connector labels into the silkscreen layer.
+* Added Jake Stewart's cabling schematic
+  (with edits - e.g text was too large in Eagle v4.09)
+
+
+v1.0.0 - changes from v0.07:
+
+* Changed to the standard versioning scheme: major.minor.bugfix
+* Firmware is released separately from the schematics from now on.
+
+* Changed D101 from BAT48 to 1N5818.
+
+* Added a pin that makes it easier to connect the buffered common mode
+  signals on different boards, to the single DRL amplifier.
+  The pin is marked "COM" and is located near the DRL amplifier.
+* Moved mounting screws on the analog board to opposite corners to
+  increase the clearance around J201.
+* Minor layout modifications on the boards, increasing the clearances
+  around some capacitors.
+
+* Clarified DRL trimming instructions on the schematic.
+* Cleaned up the schematics some more.
+* Cleaned up Cables.sch slightly.
+
+v0.07 - changes from v0.06:
+
+* Changed R124 and R128 (optocoupler LED-current limiters) to 470 ohms.
+* Programming connector is now standard 10-pin.
+* Cleaned up the digital board layout.
+* 5VI 5VO power pins removed in favor of a single power input.
+* Bugfix: digital board outline cut open to preserve isolation distances.
+* Bugfix: Diode moved out from under 7805.
+* 10k trimpots changed to 20k
+* Added decoupling capacitor near optocoupler on isolated side.
+
+v0.06 - changes from v0.05:
+
+Important note:
+
+Some parts from Newark did not fit the v0.04 / v0.05 PCBs so
+the layout was modified for v0.06.
+
+If you have a v0.05 board or earlier, the 1uF (both kinds), 10uF
+and 47uF capacitors from Newark, may not fit on a v0.04 board.
+The low-ESR 47uF capacitor may also be a tight fit.
+
+The following three changes are what caused this:
+
+* Layout change: Moved a few parts slightly to allow for bigger
+  capacitors from Newark
+* Layout change: Added holes (vias really) for 1uF capacitors with
+  5mm lead pitch (from Newark).
+* Layout change: Lead pitch for low ESR capacitor changed to 5 mm.
+
+The other changes are:
+
+* Added a "how to order PCBs.txt" file
+
+* Change log bug. :o) These two changes were not mentioned in the
+  previous change log entry:
+
+  1 Added a "crowbar-diode" D104
+    Only for those who will supply +5V from e.g a PS/2 port
+    rather than using the on-board 7805.
+
+  2 Added two 3mm mounting holes on each board.
+
+* Modified the WARNING.txt file: Rewrote portions of the disclaimer
+  for the ModularEEG, and split up some paragraphs to make them
+  easier to read.
+* Marked the programming-clock RC-network (C102, R108) as optional.
+* Removed C102 from the order info spreadsheet.
+* Remarked the crystal loading capacitors (C115, C116) as Cxtal.
+* Fixed "missing junction" warnings in the schematics.
+
+Complete BOM / order info overhaul:
+
+* Added Newark Electronics (US) to the order info spreadsheet.
+* Added partial Digi-Key (US) order info (to complement Newark)
+* Modified inductor requirements: Increased Imax from 200mA to 285mA
+  Actually ~200mA is ok, but is less than theoretical maximum.
+* Added Cxtal calculation information.
+* Reworked the notes.
+
+v0.05 - changes from v0.04:
+
+* Added missing 47uF capacitor in the BOM (you need 4, not 3)
+* Added resistors missing in the BOM: R124 R125 R126 R127 R128 R129 R130 (all 1k)
+* The v0.04 firmware read the ADC improperly, so no data was output.
+* Change: New recommended ESR for C201 is 1 ohm.
+
+  Recommended reference parts:
+
+  Kemet T350K476K025AS or T356K476K025AS
+  Digikey part no 399-1422-ND or 399-1347-ND
+  47uF/25V, ESR = 1.0 ohm @ 100kHz.
+  Lead pitch 5mm, price $5.07
+
+  Note the 5mm lead pitch. The footprint on the PCB is not changed though.
+
+v0.04 - changes from v0.03:
+
+* Added a power-on LED.
+* Removed secondary 7805. The DCDC converter is now required.
+* Added a diode to protect the electronics from a reversed power supply.
+* Added a 4th order lowpass filter, fc = 58Hz
+* Switched to INA114 instrumentation amplifier.
+* Gain changes: Second stage gain is 10 - 100, (G = 40 is the default).
+  Filter gain is 16.
+* Added 10k trimpot for subtracting common mode DC voltages in the DRL,
+  caused by cheap inamps.
+
+v0.03 - changes from v0.02
+
+* New DC/DC converter footprint
+* Fixed swapped component designators
+* Bill of materials is rewritten.
+* Added cabling schematics.
+* Added new firmware source.

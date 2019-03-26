@@ -1,0 +1,2 @@
+The firmware is released separately, and is available
+from http://openeeg.sourceforge.net

@@ -1,0 +1,44 @@
+This file contains a short list of distributors of electronic parts.
+
+If you are aware of any other distributors (preferably with online stores) that have many of the parts needed for the OpenEEG project, please join the mailing list and let us know!
+
+http://lists.sourceforge.net/lists/listinfo/openeeg-list
+
+Company: RS Components
+Location: United Kingdom
+Sales: Worldwide
+UK website: http://rswww.com
+Int'l website http://www.rs-components.com
+Notes: Cheap shipping within the EU (€6 + taxes).
+
+Company: Reichelt Elektronik
+Location: Germany
+Sales: Europe, worldwide?
+Main website: http://www.reichelt.de
+Notes: Minimum €50 for international orders.
+
+Company: Digi-Key Corp.
+Location: USA
+Sales: USA, Canada, Japan. Ships worldwide.
+Main website: http://www.digikey.com
+Notes: International (that is, non-US, Canadian
+       or Japanese) orders cost $6 extra.
+       Shipping to Europe is $18 minimum -
+       elsewhere: probably more.
+       Huge inventory, but somewhat expensive.
+
+Company: Newark Electronics
+Location: USA
+Sales: USA, Canada, Mexico. Ships worldwide.
+Main website: http://www.newark.com
+
+Company: Elfa AB
+Location: Sweden
+Sales: Scandinavia, Baltic states, Russia and Poland.
+Main website: http://www.elfa.se
+Baltic and Russian retailers:
+http://www.tevalo.ee
+http://www.tevalo.lv
+http://www.lemona.lt/
+http://www.megachip.ru/
+

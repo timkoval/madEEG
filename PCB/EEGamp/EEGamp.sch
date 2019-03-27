@@ -76,8 +76,6 @@ F 3 "~" H 2000 2400 50  0001 C CNN
 	1    2000 2400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1450 1700
-NoConn ~ 1450 3100
 Wire Wire Line
 	3000 2900 3250 2900
 Wire Wire Line
@@ -242,8 +240,6 @@ F 3 "~" H 2000 5150 50  0001 C CNN
 	1    2000 5150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1450 4450
-NoConn ~ 1450 5850
 Wire Wire Line
 	3000 5650 3250 5650
 Wire Wire Line
@@ -388,7 +384,6 @@ Wire Wire Line
 	2600 7550 2350 7550
 Wire Wire Line
 	1450 7550 1950 7550
-NoConn ~ 1450 7550
 Text Label 1450 7550 0    50   ~ 0
 R_LEG
 $Comp
@@ -982,7 +977,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 2500 8750 2500
 Connection ~ 8950 3000
-NoConn ~ 6300 1750
 Wire Wire Line
 	5800 2400 6300 2400
 Wire Wire Line
@@ -1388,7 +1382,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 5250 8750 5250
 Connection ~ 8950 5750
-NoConn ~ 6300 4500
 Wire Wire Line
 	5800 5150 6300 5150
 Wire Wire Line
@@ -2039,8 +2032,6 @@ F 3 "~" H 11250 8500 50  0001 C CNN
 	1    11250 8500
 	0    1    1    0   
 $EndComp
-NoConn ~ 9750 8000
-NoConn ~ 9750 8500
 Wire Wire Line
 	9750 8000 10250 8000
 Wire Wire Line
@@ -2208,7 +2199,7 @@ U 3 1 5CA04BBD
 P 5150 6850
 F 0 "U4" H 5108 6896 50  0000 L CNN
 F 1 "TLC277" H 5108 6805 50  0000 L CNN
-F 2 "" H 5150 6850 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 6850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 5150 6850 50  0001 C CNN
 	3    5150 6850
 	1    0    0    -1  
@@ -2225,7 +2216,7 @@ U 3 1 5CA5F804
 P 11950 5950
 F 0 "U6" H 11650 6050 50  0000 L CNN
 F 1 "TLC277" H 11650 5950 50  0000 L CNN
-F 2 "" H 11950 5950 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 5950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 11950 5950 50  0001 C CNN
 	3    11950 5950
 	1    0    0    -1  
@@ -2239,7 +2230,7 @@ U 3 1 5CA9C11A
 P 12050 3200
 F 0 "U5" H 11750 3300 50  0000 L CNN
 F 1 "TLC277" H 11750 3200 50  0000 L CNN
-F 2 "" H 12050 3200 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 3200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12050 3200 50  0001 C CNN
 	3    12050 3200
 	1    0    0    -1  
@@ -2247,4 +2238,89 @@ $EndComp
 Wire Wire Line
 	11950 2900 11950 2850
 Connection ~ 11950 2850
+$Comp
+L Connector:TestPoint_2Pole TP1
+U 1 1 5C9CF83E
+P 1450 2400
+F 0 "TP1" V 1200 2250 50  0000 L CNN
+F 1 "CH2" V 1700 2250 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1450 2400 50  0001 C CNN
+F 3 "~" H 1450 2400 50  0001 C CNN
+	1    1450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 1700 1450 2200
+Wire Wire Line
+	1450 2600 1450 3100
+$Comp
+L Connector:TestPoint_2Pole TP2
+U 1 1 5CA29D1B
+P 1450 5150
+F 0 "TP2" V 1200 5000 50  0000 L CNN
+F 1 "CH1" V 1700 5000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1450 5150 50  0001 C CNN
+F 3 "~" H 1450 5150 50  0001 C CNN
+	1    1450 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 4450 1450 4950
+Wire Wire Line
+	1450 5350 1450 5850
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CAFF7BF
+P 6300 1750
+F 0 "TP4" H 6358 1870 50  0000 L CNN
+F 1 "DC Check CH2" H 6358 1779 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6500 1750 50  0001 C CNN
+F 3 "~" H 6500 1750 50  0001 C CNN
+	1    6300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CB3D2B3
+P 9750 8000
+F 0 "TP6" V 9945 8074 50  0000 C CNN
+F 1 "CalGND" V 9854 8074 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9950 8000 50  0001 C CNN
+F 3 "~" H 9950 8000 50  0001 C CNN
+	1    9750 8000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CB3D770
+P 9750 8500
+F 0 "TP7" V 9650 8600 50  0000 C CNN
+F 1 "CalU" V 9550 8600 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9950 8500 50  0001 C CNN
+F 3 "~" H 9950 8500 50  0001 C CNN
+	1    9750 8500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CB5F41E
+P 1450 7550
+F 0 "TP3" V 1645 7624 50  0000 C CNN
+F 1 "R_LEG" V 1554 7624 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 1650 7550 50  0001 C CNN
+F 3 "~" H 1650 7550 50  0001 C CNN
+	1    1450 7550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CB7EC6C
+P 6300 4500
+F 0 "TP5" H 6358 4620 50  0000 L CNN
+F 1 "DC Check CH1" H 6358 4529 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6500 4500 50  0001 C CNN
+F 3 "~" H 6500 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

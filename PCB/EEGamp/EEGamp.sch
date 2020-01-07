@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:EEGamp-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Amplifier_Instrumentation:AD620 U2
-U 1 1 5C713C30
-P 5400 2400
-F 0 "U2" H 5600 2500 50  0000 L CNN
-F 1 "AD620" H 5650 2300 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 2400 50  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD620.pdf" H 5400 2400 50  0001 C CNN
-	1    5400 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 2300 3250 2400
 Wire Wire Line
@@ -42,23 +31,23 @@ Connection ~ 3000 2400
 Wire Wire Line
 	3000 2400 3000 2500
 $Comp
-L Device:C C6
+L EEGamp-rescue:C-Device C6
 U 1 1 5C714DB3
 P 2350 2700
 F 0 "C6" H 2350 2800 50  0000 L CNN
 F 1 "100pF" H 2350 2600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2388 2550 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2388 2550 50  0001 C CNN
 F 3 "~" H 2350 2700 50  0001 C CNN
 	1    2350 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
+L EEGamp-rescue:C-Device C5
 U 1 1 5C714E2E
 P 2350 2100
 F 0 "C5" H 2350 2200 50  0000 L CNN
 F 1 "100pF" H 2350 2000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2388 1950 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2388 1950 50  0001 C CNN
 F 3 "~" H 2350 2100 50  0001 C CNN
 	1    2350 2100
 	1    0    0    -1  
@@ -66,12 +55,12 @@ $EndComp
 Wire Wire Line
 	2350 2250 2350 2550
 $Comp
-L Device:C C1
+L EEGamp-rescue:C-Device C1
 U 1 1 5C715550
 P 2000 2400
 F 0 "C1" H 2000 2500 50  0000 L CNN
 F 1 "10pF" H 2000 2300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2038 2250 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2038 2250 50  0001 C CNN
 F 3 "~" H 2000 2400 50  0001 C CNN
 	1    2000 2400
 	1    0    0    -1  
@@ -178,17 +167,6 @@ Text Label 1450 1700 0    50   ~ 0
 CH2-
 Text Label 1450 3100 0    50   ~ 0
 CH2+
-$Comp
-L Amplifier_Instrumentation:AD620 U3
-U 1 1 5C72C51A
-P 5400 5150
-F 0 "U3" H 5600 5250 50  0000 L CNN
-F 1 "AD620" H 5600 5050 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 5150 50  0001 C CNN
-F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD620.pdf" H 5400 5150 50  0001 C CNN
-	1    5400 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 5050 3250 5150
 Wire Wire Line
@@ -206,23 +184,23 @@ Connection ~ 3000 5150
 Wire Wire Line
 	3000 5150 3000 5250
 $Comp
-L Device:C C8
+L EEGamp-rescue:C-Device C8
 U 1 1 5C72C546
 P 2350 5450
 F 0 "C8" H 2350 5550 50  0000 L CNN
 F 1 "100pF" H 2350 5350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2388 5300 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2388 5300 50  0001 C CNN
 F 3 "~" H 2350 5450 50  0001 C CNN
 	1    2350 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L EEGamp-rescue:C-Device C7
 U 1 1 5C72C54D
 P 2350 4850
 F 0 "C7" H 2350 4950 50  0000 L CNN
 F 1 "100pF" H 2350 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2388 4700 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2388 4700 50  0001 C CNN
 F 3 "~" H 2350 4850 50  0001 C CNN
 	1    2350 4850
 	1    0    0    -1  
@@ -230,12 +208,12 @@ $EndComp
 Wire Wire Line
 	2350 5000 2350 5300
 $Comp
-L Device:C C2
+L EEGamp-rescue:C-Device C2
 U 1 1 5C72C555
 P 2000 5150
 F 0 "C2" H 2000 5250 50  0000 L CNN
 F 1 "10pF" H 2000 5050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2038 5000 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2038 5000 50  0001 C CNN
 F 3 "~" H 2000 5150 50  0001 C CNN
 	1    2000 5150
 	1    0    0    -1  
@@ -264,7 +242,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 5850 3000 5650
 Connection ~ 2350 5850
-Connection ~ 3000 5650
 Wire Wire Line
 	3250 4650 3250 4450
 Wire Wire Line
@@ -311,7 +288,6 @@ Wire Wire Line
 	3900 4550 3900 4850
 Wire Wire Line
 	3000 4650 3250 4650
-Connection ~ 3000 4650
 Wire Wire Line
 	5000 4450 5000 4950
 Wire Wire Line
@@ -324,17 +300,6 @@ Wire Wire Line
 	4650 5050 4600 5050
 Wire Wire Line
 	4600 5250 4650 5250
-$Comp
-L Amplifier_Operational:TLC277 U4
-U 1 1 5C72C5CB
-P 3900 7150
-F 0 "U4" H 3900 6950 50  0000 C CNN
-F 1 "TLC277" H 3950 7400 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3900 7150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 3900 7150 50  0001 C CNN
-	1    3900 7150
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 7150 3550 7150
 Wire Wire Line
@@ -356,28 +321,6 @@ Text Label 1450 4450 0    50   ~ 0
 CH1-
 Text Label 1450 5850 0    50   ~ 0
 CH1+
-$Comp
-L Amplifier_Operational:TLC277 U4
-U 2 1 5C73BEFE
-P 5350 3700
-F 0 "U4" H 5400 3550 50  0000 C CNN
-F 1 "TLC277" H 5400 3900 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 5350 3700 50  0001 C CNN
-	2    5350 3700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TLC277 U1
-U 2 1 5C73C0FA
-P 2900 7550
-F 0 "U1" H 2900 7350 50  0000 C CNN
-F 1 "TLC277" H 2950 7750 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 7550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 2900 7550 50  0001 C CNN
-	2    2900 7550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3200 7150 3200 7450
 Wire Wire Line
@@ -387,12 +330,12 @@ Wire Wire Line
 Text Label 1450 7550 0    50   ~ 0
 R_LEG
 $Comp
-L Device:C C4
+L EEGamp-rescue:C-Device C4
 U 1 1 5C7611DB
 P 2150 7800
 F 0 "C4" V 2400 7800 50  0000 C CNN
 F 1 "1nF" V 2300 7800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 7650 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2188 7650 50  0001 C CNN
 F 3 "~" H 2150 7800 50  0001 C CNN
 	1    2150 7800
 	0    1    1    0   
@@ -412,12 +355,12 @@ Connection ~ 1950 7550
 Wire Wire Line
 	1950 7550 2000 7550
 $Comp
-L Device:C C3
+L EEGamp-rescue:C-Device C3
 U 1 1 5C76A052
 P 2150 7150
 F 0 "C3" V 1898 7150 50  0000 C CNN
 F 1 "1nF" V 1989 7150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 7000 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 2188 7000 50  0001 C CNN
 F 3 "~" H 2150 7150 50  0001 C CNN
 	1    2150 7150
 	0    1    1    0   
@@ -430,12 +373,12 @@ Wire Wire Line
 	2300 7150 3000 7150
 Connection ~ 3200 7150
 $Comp
-L Device:R_POT_US RV1
+L EEGamp-rescue:R_POT_US-Device RV1
 U 1 1 5C784EEF
 P 3450 7900
 F 0 "RV1" H 3383 7946 50  0000 R CNN
 F 1 "20k" H 3383 7855 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical" H 3450 7900 50  0001 C CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 3450 7900 50  0001 C CNN
 F 3 "~" H 3450 7900 50  0001 C CNN
 	1    3450 7900
 	-1   0    0    -1  
@@ -453,213 +396,213 @@ GNDA
 Wire Wire Line
 	3450 8050 3450 8200
 $Comp
-L Device:R_US R5
+L EEGamp-rescue:R_US-Device R5
 U 1 1 5C7C3F4D
 P 2150 7550
 F 0 "R5" V 1945 7550 50  0000 C CNN
 F 1 "200k" V 2036 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2190 7540 50  0001 C CNN
+F 2 "Resistors:R_0603" V 2190 7540 50  0001 C CNN
 F 3 "~" H 2150 7550 50  0001 C CNN
 	1    2150 7550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R6
+L EEGamp-rescue:R_US-Device R6
 U 1 1 5C7C40AF
 P 3350 7150
 F 0 "R6" V 3145 7150 50  0000 C CNN
 F 1 "10k" V 3236 7150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3390 7140 50  0001 C CNN
+F 2 "Resistors:R_0603" V 3390 7140 50  0001 C CNN
 F 3 "~" H 3350 7150 50  0001 C CNN
 	1    3350 7150
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R10
+L EEGamp-rescue:R_US-Device R10
 U 1 1 5C7CE568
 P 3700 5850
 F 0 "R10" V 3900 5850 50  0000 C CNN
 F 1 "2k2" V 3800 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3740 5840 50  0001 C CNN
+F 2 "Resistors:R_0603" V 3740 5840 50  0001 C CNN
 F 3 "~" H 3700 5850 50  0001 C CNN
 	1    3700 5850
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R14
+L EEGamp-rescue:R_US-Device R14
 U 1 1 5C7CE651
 P 4150 5850
 F 0 "R14" V 4350 5850 50  0000 C CNN
 F 1 "2k2" V 4250 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4190 5840 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4190 5840 50  0001 C CNN
 F 3 "~" H 4150 5850 50  0001 C CNN
 	1    4150 5850
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R19
+L EEGamp-rescue:R_US-Device R19
 U 1 1 5C7CE728
 P 4800 5250
 F 0 "R19" V 5000 5250 50  0000 C CNN
 F 1 "2k2" V 4900 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4840 5240 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4840 5240 50  0001 C CNN
 F 3 "~" H 4800 5250 50  0001 C CNN
 	1    4800 5250
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R18
+L EEGamp-rescue:R_US-Device R18
 U 1 1 5C7CE825
 P 4800 5050
 F 0 "R18" V 4595 5050 50  0000 C CNN
 F 1 "2k2" V 4686 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4840 5040 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4840 5040 50  0001 C CNN
 F 3 "~" H 4800 5050 50  0001 C CNN
 	1    4800 5050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R8
+L EEGamp-rescue:R_US-Device R8
 U 1 1 5C7CEBF2
 P 3650 4450
 F 0 "R8" V 3445 4450 50  0000 C CNN
 F 1 "2k2" V 3536 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 4440 50  0001 C CNN
+F 2 "Resistors:R_0603" V 3690 4440 50  0001 C CNN
 F 3 "~" H 3650 4450 50  0001 C CNN
 	1    3650 4450
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R12
+L EEGamp-rescue:R_US-Device R12
 U 1 1 5C7CECFB
 P 4100 4450
 F 0 "R12" V 3895 4450 50  0000 C CNN
 F 1 "2k2" V 3986 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4140 4440 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4140 4440 50  0001 C CNN
 F 3 "~" H 4100 4450 50  0001 C CNN
 	1    4100 4450
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R3
+L EEGamp-rescue:R_US-Device R3
 U 1 1 5C7CEF43
 P 1850 4450
 F 0 "R3" V 1645 4450 50  0000 C CNN
 F 1 "2k2" V 1736 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1890 4440 50  0001 C CNN
+F 2 "Resistors:R_0603" V 1890 4440 50  0001 C CNN
 F 3 "~" H 1850 4450 50  0001 C CNN
 	1    1850 4450
 	0    1    1    0   
 $EndComp
 Connection ~ 2000 4450
 $Comp
-L Device:R_US R4
+L EEGamp-rescue:R_US-Device R4
 U 1 1 5C7CF0FA
 P 1850 5850
 F 0 "R4" V 2050 5850 50  0000 C CNN
 F 1 "2k2" V 1950 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1890 5840 50  0001 C CNN
+F 2 "Resistors:R_0603" V 1890 5840 50  0001 C CNN
 F 3 "~" H 1850 5850 50  0001 C CNN
 	1    1850 5850
 	0    1    1    0   
 $EndComp
 Connection ~ 2000 5850
 $Comp
-L Device:R_US R15
+L EEGamp-rescue:R_US-Device R15
 U 1 1 5C7CF3E8
 P 4550 3700
 F 0 "R15" V 4345 3700 50  0000 C CNN
 F 1 "10k" V 4436 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4590 3690 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4590 3690 50  0001 C CNN
 F 3 "~" H 4550 3700 50  0001 C CNN
 	1    4550 3700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R2
+L EEGamp-rescue:R_US-Device R2
 U 1 1 5C7CF56C
 P 1850 3100
 F 0 "R2" V 2050 3100 50  0000 C CNN
 F 1 "2k2" V 1950 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1890 3090 50  0001 C CNN
+F 2 "Resistors:R_0603" V 1890 3090 50  0001 C CNN
 F 3 "~" H 1850 3100 50  0001 C CNN
 	1    1850 3100
 	0    1    1    0   
 $EndComp
 Connection ~ 2000 3100
 $Comp
-L Device:R_US R9
+L EEGamp-rescue:R_US-Device R9
 U 1 1 5C7CF663
 P 3700 3100
 F 0 "R9" V 3900 3100 50  0000 C CNN
 F 1 "2k2" V 3800 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3740 3090 50  0001 C CNN
+F 2 "Resistors:R_0603" V 3740 3090 50  0001 C CNN
 F 3 "~" H 3700 3100 50  0001 C CNN
 	1    3700 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R13
+L EEGamp-rescue:R_US-Device R13
 U 1 1 5C7CF748
 P 4150 3100
 F 0 "R13" V 4350 3100 50  0000 C CNN
 F 1 "2k2" V 4250 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4190 3090 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4190 3090 50  0001 C CNN
 F 3 "~" H 4150 3100 50  0001 C CNN
 	1    4150 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R17
+L EEGamp-rescue:R_US-Device R17
 U 1 1 5C7CF9D9
 P 4800 2500
 F 0 "R17" V 5000 2500 50  0000 C CNN
 F 1 "2k2" V 4900 2500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4840 2490 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4840 2490 50  0001 C CNN
 F 3 "~" H 4800 2500 50  0001 C CNN
 	1    4800 2500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R16
+L EEGamp-rescue:R_US-Device R16
 U 1 1 5C7CFA7D
 P 4800 2300
 F 0 "R16" V 4595 2300 50  0000 C CNN
 F 1 "2k2" V 4686 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4840 2290 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4840 2290 50  0001 C CNN
 F 3 "~" H 4800 2300 50  0001 C CNN
 	1    4800 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R11
+L EEGamp-rescue:R_US-Device R11
 U 1 1 5C7CFB77
 P 4100 1700
 F 0 "R11" V 3895 1700 50  0000 C CNN
 F 1 "2k2" V 3986 1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4140 1690 50  0001 C CNN
+F 2 "Resistors:R_0603" V 4140 1690 50  0001 C CNN
 F 3 "~" H 4100 1700 50  0001 C CNN
 	1    4100 1700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R7
+L EEGamp-rescue:R_US-Device R7
 U 1 1 5C7CFCF3
 P 3650 1700
 F 0 "R7" V 3855 1700 50  0000 C CNN
 F 1 "2k2" V 3764 1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3690 1690 50  0001 C CNN
+F 2 "Resistors:R_0603" V 3690 1690 50  0001 C CNN
 F 3 "~" H 3650 1700 50  0001 C CNN
 	1    3650 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R1
+L EEGamp-rescue:R_US-Device R1
 U 1 1 5C7CFF66
 P 1850 1700
 F 0 "R1" V 2055 1700 50  0000 C CNN
 F 1 "2k2" V 1964 1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1890 1690 50  0001 C CNN
+F 2 "Resistors:R_0603" V 1890 1690 50  0001 C CNN
 F 3 "~" H 1850 1700 50  0001 C CNN
 	1    1850 1700
 	0    -1   -1   0   
@@ -717,12 +660,12 @@ Wire Wire Line
 	4400 3700 4400 6400
 Connection ~ 3000 6400
 $Comp
-L Device:C C9
+L EEGamp-rescue:C-Device C9
 U 1 1 5C883F0E
 P 5250 6400
 F 0 "C9" V 4998 6400 50  0000 C CNN
 F 1 "100nF" V 5089 6400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5288 6250 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 5288 6250 50  0001 C CNN
 F 3 "~" H 5250 6400 50  0001 C CNN
 	1    5250 6400
 	0    1    1    0   
@@ -732,12 +675,12 @@ Wire Wire Line
 Wire Wire Line
 	5050 6400 5100 6400
 $Comp
-L Device:C C10
+L EEGamp-rescue:C-Device C10
 U 1 1 5C8B4BA7
 P 5250 7300
 F 0 "C10" V 5500 7300 50  0000 C CNN
 F 1 "100nF" V 5400 7300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5288 7150 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 5288 7150 50  0001 C CNN
 F 3 "~" H 5250 7300 50  0001 C CNN
 	1    5250 7300
 	0    1    1    0   
@@ -758,7 +701,7 @@ Connection ~ 5500 6850
 Wire Wire Line
 	5500 6850 5500 7300
 $Comp
-L power:+5V #PWR0101
+L EEGamp-rescue:+5V-power #PWR0101
 U 1 1 5C893E64
 P 5050 6250
 F 0 "#PWR0101" H 5050 6100 50  0001 C CNN
@@ -769,7 +712,7 @@ F 3 "" H 5050 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0102
+L EEGamp-rescue:GNDA-power #PWR0102
 U 1 1 5C8D8385
 P 5050 7450
 F 0 "#PWR0102" H 5050 7200 50  0001 C CNN
@@ -782,18 +725,18 @@ $EndComp
 Wire Wire Line
 	5050 7450 5050 7300
 $Comp
-L Device:C C11
+L EEGamp-rescue:C-Device C11
 U 1 1 5C8E4FC7
 P 5450 1850
 F 0 "C11" V 5198 1850 50  0000 C CNN
 F 1 "100nF" V 5289 1850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5488 1700 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 5488 1700 50  0001 C CNN
 F 3 "~" H 5450 1850 50  0001 C CNN
 	1    5450 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0103
+L EEGamp-rescue:+5V-power #PWR0103
 U 1 1 5C915337
 P 5300 1650
 F 0 "#PWR0103" H 5300 1500 50  0001 C CNN
@@ -811,12 +754,12 @@ Connection ~ 5300 1850
 Wire Wire Line
 	5300 1850 5300 2100
 $Comp
-L Device:C C13
+L EEGamp-rescue:C-Device C13
 U 1 1 5C96A841
 P 6250 2900
 F 0 "C13" V 5998 2900 50  0000 C CNN
 F 1 "100nF" V 6089 2900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 2750 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 6288 2750 50  0001 C CNN
 F 3 "~" H 6250 2900 50  0001 C CNN
 	1    6250 2900
 	0    -1   -1   0   
@@ -828,7 +771,7 @@ Wire Wire Line
 Wire Wire Line
 	5300 2700 5300 2900
 $Comp
-L power:GNDA #PWR0104
+L EEGamp-rescue:GNDA-power #PWR0104
 U 1 1 5C99C05A
 P 6000 3050
 F 0 "#PWR0104" H 6000 2800 50  0001 C CNN
@@ -859,80 +802,69 @@ Connection ~ 5650 1850
 Wire Wire Line
 	5650 1850 5900 1850
 $Comp
-L Device:C C15
+L EEGamp-rescue:C-Device C15
 U 1 1 5C9FD2CD
 P 6550 2400
 F 0 "C15" V 6298 2400 50  0000 C CNN
 F 1 "1μF" V 6389 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6588 2250 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 6588 2250 50  0001 C CNN
 F 3 "~" H 6550 2400 50  0001 C CNN
 	1    6550 2400
 	0    1    1    0   
 $EndComp
-$Comp
-L Amplifier_Operational:TLC277 U5
-U 1 1 5C9FD4BC
-P 8450 2500
-F 0 "U5" H 8450 2867 50  0000 C CNN
-F 1 "TLC277" H 8450 2776 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 8450 2500 50  0001 C CNN
-	1    8450 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 2400 7000 2400
 $Comp
-L Device:R_US R24
+L EEGamp-rescue:R_US-Device R24
 U 1 1 5CA18604
 P 8450 3000
 F 0 "R24" V 8245 3000 50  0000 C CNN
 F 1 "100k" V 8336 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8490 2990 50  0001 C CNN
+F 2 "Resistors:R_0603" V 8490 2990 50  0001 C CNN
 F 3 "~" H 8450 3000 50  0001 C CNN
 	1    8450 3000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C17
+L EEGamp-rescue:C-Device C17
 U 1 1 5CA1F3DA
 P 8450 3250
 F 0 "C17" V 8200 3250 50  0000 C CNN
 F 1 "1nF" V 8300 3250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8488 3100 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 8488 3100 50  0001 C CNN
 F 3 "~" H 8450 3250 50  0001 C CNN
 	1    8450 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R20
+L EEGamp-rescue:R_US-Device R20
 U 1 1 5CA2D1F4
 P 7000 2650
 F 0 "R20" H 7068 2696 50  0000 L CNN
 F 1 "1M" H 7068 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7040 2640 50  0001 C CNN
+F 2 "Resistors:R_0603" V 7040 2640 50  0001 C CNN
 F 3 "~" H 7000 2650 50  0001 C CNN
 	1    7000 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT_US RV2
+L EEGamp-rescue:R_POT_US-Device RV2
 U 1 1 5CA3ACBF
 P 7300 3000
 F 0 "RV2" V 7188 3000 50  0000 C CNN
 F 1 "20k" V 7097 3000 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical" H 7300 3000 50  0001 C CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 7300 3000 50  0001 C CNN
 F 3 "~" H 7300 3000 50  0001 C CNN
 	1    7300 3000
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_US R22
+L EEGamp-rescue:R_US-Device R22
 U 1 1 5CA3AE81
 P 7700 3000
 F 0 "R22" V 7900 3000 50  0000 C CNN
 F 1 "1k" V 7800 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7740 2990 50  0001 C CNN
+F 2 "Resistors:R_0603" V 7740 2990 50  0001 C CNN
 F 3 "~" H 7700 3000 50  0001 C CNN
 	1    7700 3000
 	0    1    1    0   
@@ -985,48 +917,37 @@ Connection ~ 6300 2400
 Wire Wire Line
 	6300 2400 6400 2400
 $Comp
-L Device:C C19
+L EEGamp-rescue:C-Device C19
 U 1 1 5CAB53B6
 P 9450 2400
 F 0 "C19" V 9198 2400 50  0000 C CNN
 F 1 "1μF" V 9289 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 2250 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 9488 2250 50  0001 C CNN
 F 3 "~" H 9450 2400 50  0001 C CNN
 	1    9450 2400
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R28
+L EEGamp-rescue:R_US-Device R28
 U 1 1 5CAB5572
 P 9950 2400
 F 0 "R28" V 9745 2400 50  0000 C CNN
 F 1 "10k" V 9836 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9990 2390 50  0001 C CNN
+F 2 "Resistors:R_0603" V 9990 2390 50  0001 C CNN
 F 3 "~" H 9950 2400 50  0001 C CNN
 	1    9950 2400
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R34
+L EEGamp-rescue:R_US-Device R34
 U 1 1 5CAB56BD
 P 10450 2400
 F 0 "R34" V 10245 2400 50  0000 C CNN
 F 1 "15k" V 10336 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10490 2390 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10490 2390 50  0001 C CNN
 F 3 "~" H 10450 2400 50  0001 C CNN
 	1    10450 2400
 	0    1    1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:TLC277 U5
-U 2 1 5CAB5808
-P 11100 2500
-F 0 "U5" H 11200 2650 50  0000 C CNN
-F 1 "TLC277" H 11250 2350 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 11100 2500 50  0001 C CNN
-	2    11100 2500
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8950 2400 9300 2400
@@ -1035,37 +956,35 @@ Wire Wire Line
 Connection ~ 8950 2500
 Wire Wire Line
 	9600 2400 9700 2400
-Wire Wire Line
-	10100 2400 10200 2400
 $Comp
-L Device:R_US R26
+L EEGamp-rescue:R_US-Device R26
 U 1 1 5CAE04A6
 P 9700 2750
 F 0 "R26" H 9768 2796 50  0000 L CNN
 F 1 "1M" H 9768 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9740 2740 50  0001 C CNN
+F 2 "Resistors:R_0603" V 9740 2740 50  0001 C CNN
 F 3 "~" H 9700 2750 50  0001 C CNN
 	1    9700 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R30
+L EEGamp-rescue:R_US-Device R30
 U 1 1 5CAE05B7
 P 10150 3100
 F 0 "R30" V 10350 3100 50  0000 C CNN
 F 1 "8.2k" V 10250 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10190 3090 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10190 3090 50  0001 C CNN
 F 3 "~" H 10150 3100 50  0001 C CNN
 	1    10150 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C21
+L EEGamp-rescue:C-Device C21
 U 1 1 5CAE0D73
 P 10600 2650
 F 0 "C21" H 10450 2750 50  0000 L CNN
 F 1 "220nF 5%" H 10200 2550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10638 2500 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 10638 2500 50  0001 C CNN
 F 3 "~" H 10600 2650 50  0001 C CNN
 	1    10600 2650
 	1    0    0    -1  
@@ -1091,29 +1010,14 @@ Text Label 12600 2500 0    50   ~ 0
 ADIN1
 Wire Wire Line
 	11400 2500 11500 2500
-Wire Wire Line
-	11500 2150 11500 2500
 Connection ~ 11500 2500
 $Comp
-L Device:C C23
-U 1 1 5CB2A06F
-P 11100 2150
-F 0 "C23" V 10848 2150 50  0000 C CNN
-F 1 "33nF 5%" V 10939 2150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11138 2000 50  0001 C CNN
-F 3 "~" H 11100 2150 50  0001 C CNN
-	1    11100 2150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11250 2150 11500 2150
-$Comp
-L Device:R_US R38
+L EEGamp-rescue:R_US-Device R38
 U 1 1 5CB3D376
 P 11150 3100
 F 0 "R38" V 10945 3100 50  0000 C CNN
 F 1 "100k" V 11036 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11190 3090 50  0001 C CNN
+F 2 "Resistors:R_0603" V 11190 3090 50  0001 C CNN
 F 3 "~" H 11150 3100 50  0001 C CNN
 	1    11150 3100
 	0    1    1    0   
@@ -1129,12 +1033,12 @@ Wire Wire Line
 	7000 3200 7000 3000
 Connection ~ 7000 3000
 $Comp
-L Device:C C25
+L EEGamp-rescue:C-Device C25
 U 1 1 5CB5AA1D
 P 11150 3350
 F 0 "C25" V 11400 3350 50  0000 C CNN
 F 1 "1nF" V 11300 3350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11188 3200 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 11188 3200 50  0001 C CNN
 F 3 "~" H 11150 3350 50  0001 C CNN
 	1    11150 3350
 	0    1    1    0   
@@ -1158,7 +1062,7 @@ Connection ~ 11500 3100
 Wire Wire Line
 	11500 2500 12600 2500
 $Comp
-L power:+5V #PWR0105
+L EEGamp-rescue:+5V-power #PWR0105
 U 1 1 5CBC8DAE
 P 11950 2800
 F 0 "#PWR0105" H 11950 2650 50  0001 C CNN
@@ -1169,7 +1073,7 @@ F 3 "" H 11950 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0106
+L EEGamp-rescue:GNDA-power #PWR0106
 U 1 1 5CBD369D
 P 12150 3500
 F 0 "#PWR0106" H 12150 3250 50  0001 C CNN
@@ -1180,12 +1084,12 @@ F 3 "" H 12150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C32
+L EEGamp-rescue:C-Device C32
 U 1 1 5CBDDC2D
 P 12500 3100
 F 0 "C32" H 12500 3200 50  0000 L CNN
 F 1 "100nF" H 12500 3000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12538 2950 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 12538 2950 50  0001 C CNN
 F 3 "~" H 12500 3100 50  0001 C CNN
 	1    12500 3100
 	1    0    0    -1  
@@ -1194,17 +1098,6 @@ Text Label 12900 3150 3    50   ~ 0
 VGND
 Wire Wire Line
 	11950 2800 11950 2850
-$Comp
-L Device:C C30
-U 1 1 5CBFD019
-P 12150 3050
-F 0 "C30" H 12150 3150 50  0000 L CNN
-F 1 "100nF" H 12150 2950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12188 2900 50  0001 C CNN
-F 3 "~" H 12150 3050 50  0001 C CNN
-	1    12150 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11950 2850 12150 2850
 Wire Wire Line
@@ -1225,12 +1118,12 @@ Wire Wire Line
 Text Label 5900 4600 0    50   ~ 0
 VGND
 $Comp
-L Device:C C14
+L EEGamp-rescue:C-Device C14
 U 1 1 5CC8A53B
 P 6250 5650
 F 0 "C14" V 5998 5650 50  0000 C CNN
 F 1 "100nF" V 6089 5650 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 5500 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 6288 5500 50  0001 C CNN
 F 3 "~" H 6250 5650 50  0001 C CNN
 	1    6250 5650
 	0    -1   -1   0   
@@ -1240,7 +1133,7 @@ VGND
 Wire Wire Line
 	6400 5650 6500 5650
 $Comp
-L power:GNDA #PWR0107
+L EEGamp-rescue:GNDA-power #PWR0107
 U 1 1 5CC8A543
 P 6000 5800
 F 0 "#PWR0107" H 6000 5550 50  0001 C CNN
@@ -1264,80 +1157,69 @@ Wire Wire Line
 Wire Wire Line
 	5650 4750 6100 4750
 $Comp
-L Device:C C16
+L EEGamp-rescue:C-Device C16
 U 1 1 5CC8A551
 P 6550 5150
 F 0 "C16" V 6298 5150 50  0000 C CNN
 F 1 "1μF" V 6389 5150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6588 5000 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 6588 5000 50  0001 C CNN
 F 3 "~" H 6550 5150 50  0001 C CNN
 	1    6550 5150
 	0    1    1    0   
 $EndComp
-$Comp
-L Amplifier_Operational:TLC277 U6
-U 1 1 5CC8A557
-P 8450 5250
-F 0 "U6" H 8450 5617 50  0000 C CNN
-F 1 "TLC277" H 8450 5526 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 8450 5250 50  0001 C CNN
-	1    8450 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 5150 7000 5150
 $Comp
-L Device:R_US R25
+L EEGamp-rescue:R_US-Device R25
 U 1 1 5CC8A55E
 P 8450 5750
 F 0 "R25" V 8245 5750 50  0000 C CNN
 F 1 "100k" V 8336 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8490 5740 50  0001 C CNN
+F 2 "Resistors:R_0603" V 8490 5740 50  0001 C CNN
 F 3 "~" H 8450 5750 50  0001 C CNN
 	1    8450 5750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C18
+L EEGamp-rescue:C-Device C18
 U 1 1 5CC8A564
 P 8450 6000
 F 0 "C18" V 8200 6000 50  0000 C CNN
 F 1 "1nF" V 8300 6000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8488 5850 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 8488 5850 50  0001 C CNN
 F 3 "~" H 8450 6000 50  0001 C CNN
 	1    8450 6000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R21
+L EEGamp-rescue:R_US-Device R21
 U 1 1 5CC8A56A
 P 7000 5400
 F 0 "R21" H 7068 5446 50  0000 L CNN
 F 1 "1M" H 7068 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7040 5390 50  0001 C CNN
+F 2 "Resistors:R_0603" V 7040 5390 50  0001 C CNN
 F 3 "~" H 7000 5400 50  0001 C CNN
 	1    7000 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT_US RV3
+L EEGamp-rescue:R_POT_US-Device RV3
 U 1 1 5CC8A570
 P 7300 5750
 F 0 "RV3" V 7188 5750 50  0000 C CNN
 F 1 "20k" V 7097 5750 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296Y_Vertical" H 7300 5750 50  0001 C CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 7300 5750 50  0001 C CNN
 F 3 "~" H 7300 5750 50  0001 C CNN
 	1    7300 5750
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_US R23
+L EEGamp-rescue:R_US-Device R23
 U 1 1 5CC8A576
 P 7700 5750
 F 0 "R23" V 7900 5750 50  0000 C CNN
 F 1 "1k" V 7800 5750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7740 5740 50  0001 C CNN
+F 2 "Resistors:R_0603" V 7740 5740 50  0001 C CNN
 F 3 "~" H 7700 5750 50  0001 C CNN
 	1    7700 5750
 	0    1    1    0   
@@ -1390,48 +1272,37 @@ Connection ~ 6300 5150
 Wire Wire Line
 	6300 5150 6400 5150
 $Comp
-L Device:C C20
+L EEGamp-rescue:C-Device C20
 U 1 1 5CC8A597
 P 9450 5150
 F 0 "C20" V 9198 5150 50  0000 C CNN
 F 1 "1μF" V 9289 5150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9488 5000 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 9488 5000 50  0001 C CNN
 F 3 "~" H 9450 5150 50  0001 C CNN
 	1    9450 5150
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R29
+L EEGamp-rescue:R_US-Device R29
 U 1 1 5CC8A59D
 P 9950 5150
 F 0 "R29" V 9745 5150 50  0000 C CNN
 F 1 "10k" V 9836 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9990 5140 50  0001 C CNN
+F 2 "Resistors:R_0603" V 9990 5140 50  0001 C CNN
 F 3 "~" H 9950 5150 50  0001 C CNN
 	1    9950 5150
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R35
+L EEGamp-rescue:R_US-Device R35
 U 1 1 5CC8A5A3
 P 10450 5150
 F 0 "R35" V 10245 5150 50  0000 C CNN
 F 1 "15k" V 10336 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10490 5140 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10490 5140 50  0001 C CNN
 F 3 "~" H 10450 5150 50  0001 C CNN
 	1    10450 5150
 	0    1    1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:TLC277 U6
-U 2 1 5CC8A5A9
-P 11100 5250
-F 0 "U6" H 11200 5400 50  0000 C CNN
-F 1 "TLC277" H 11250 5100 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 11100 5250 50  0001 C CNN
-	2    11100 5250
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8950 5150 9300 5150
@@ -1440,37 +1311,35 @@ Wire Wire Line
 Connection ~ 8950 5250
 Wire Wire Line
 	9600 5150 9700 5150
-Wire Wire Line
-	10100 5150 10200 5150
 $Comp
-L Device:R_US R27
+L EEGamp-rescue:R_US-Device R27
 U 1 1 5CC8A5B5
 P 9700 5500
 F 0 "R27" H 9768 5546 50  0000 L CNN
 F 1 "1M" H 9768 5455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9740 5490 50  0001 C CNN
+F 2 "Resistors:R_0603" V 9740 5490 50  0001 C CNN
 F 3 "~" H 9700 5500 50  0001 C CNN
 	1    9700 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R31
+L EEGamp-rescue:R_US-Device R31
 U 1 1 5CC8A5BB
 P 10150 5850
 F 0 "R31" V 10350 5850 50  0000 C CNN
 F 1 "8.2k" V 10250 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10190 5840 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10190 5840 50  0001 C CNN
 F 3 "~" H 10150 5850 50  0001 C CNN
 	1    10150 5850
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C22
+L EEGamp-rescue:C-Device C22
 U 1 1 5CC8A5C1
 P 10600 5400
 F 0 "C22" H 10450 5500 50  0000 L CNN
 F 1 "220nF 5%" H 10200 5300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10638 5250 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 10638 5250 50  0001 C CNN
 F 3 "~" H 10600 5400 50  0001 C CNN
 	1    10600 5400
 	1    0    0    -1  
@@ -1496,29 +1365,27 @@ Text Label 12600 5250 0    50   ~ 0
 ADIN0
 Wire Wire Line
 	11400 5250 11500 5250
-Wire Wire Line
-	11500 4900 11500 5250
 Connection ~ 11500 5250
 $Comp
-L Device:C C24
+L EEGamp-rescue:C-Device C24
 U 1 1 5CC8A5D7
-P 11100 4900
-F 0 "C24" V 10848 4900 50  0000 C CNN
-F 1 "33nF 5%" V 10939 4900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11138 4750 50  0001 C CNN
-F 3 "~" H 11100 4900 50  0001 C CNN
-	1    11100 4900
+P 11100 4800
+F 0 "C24" V 10848 4800 50  0000 C CNN
+F 1 "33nF 5%" V 10939 4800 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11138 4650 50  0001 C CNN
+F 3 "~" H 11100 4800 50  0001 C CNN
+	1    11100 4800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11250 4900 11500 4900
+	11250 4800 11500 4800
 $Comp
-L Device:R_US R39
+L EEGamp-rescue:R_US-Device R39
 U 1 1 5CC8A5DF
 P 11150 5850
 F 0 "R39" V 10945 5850 50  0000 C CNN
 F 1 "100k" V 11036 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11190 5840 50  0001 C CNN
+F 2 "Resistors:R_0603" V 11190 5840 50  0001 C CNN
 F 3 "~" H 11150 5850 50  0001 C CNN
 	1    11150 5850
 	0    1    1    0   
@@ -1534,12 +1401,12 @@ Wire Wire Line
 	7000 5950 7000 5750
 Connection ~ 7000 5750
 $Comp
-L Device:C C26
+L EEGamp-rescue:C-Device C26
 U 1 1 5CC8A5EB
 P 11150 6100
 F 0 "C26" V 11400 6100 50  0000 C CNN
 F 1 "1nF" V 11300 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11188 5950 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 11188 5950 50  0001 C CNN
 F 3 "~" H 11150 6100 50  0001 C CNN
 	1    11150 6100
 	0    1    1    0   
@@ -1563,79 +1430,79 @@ Connection ~ 11500 5850
 Wire Wire Line
 	11500 5250 12600 5250
 $Comp
-L power:+5V #PWR0108
+L EEGamp-rescue:+5V-power #PWR0108
 U 1 1 5CC8A5FB
-P 11850 5550
-F 0 "#PWR0108" H 11850 5400 50  0001 C CNN
-F 1 "+5V" H 11865 5723 50  0000 C CNN
-F 2 "" H 11850 5550 50  0001 C CNN
-F 3 "" H 11850 5550 50  0001 C CNN
-	1    11850 5550
+P 11950 5600
+F 0 "#PWR0108" H 11950 5450 50  0001 C CNN
+F 1 "+5V" H 11965 5773 50  0000 C CNN
+F 2 "" H 11950 5600 50  0001 C CNN
+F 3 "" H 11950 5600 50  0001 C CNN
+	1    11950 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0109
+L EEGamp-rescue:GNDA-power #PWR0109
 U 1 1 5CC8A603
-P 12050 6250
-F 0 "#PWR0109" H 12050 6000 50  0001 C CNN
-F 1 "GNDA" H 12055 6077 50  0000 C CNN
-F 2 "" H 12050 6250 50  0001 C CNN
-F 3 "" H 12050 6250 50  0001 C CNN
-	1    12050 6250
+P 12150 6300
+F 0 "#PWR0109" H 12150 6050 50  0001 C CNN
+F 1 "GNDA" H 12155 6127 50  0000 C CNN
+F 2 "" H 12150 6300 50  0001 C CNN
+F 3 "" H 12150 6300 50  0001 C CNN
+	1    12150 6300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C33
+L EEGamp-rescue:C-Device C33
 U 1 1 5CC8A609
-P 12450 5850
-F 0 "C33" H 12450 5950 50  0000 L CNN
-F 1 "100nF" H 12450 5750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12488 5700 50  0001 C CNN
-F 3 "~" H 12450 5850 50  0001 C CNN
-	1    12450 5850
+P 12550 5900
+F 0 "C33" H 12550 6000 50  0000 L CNN
+F 1 "100nF" H 12550 5800 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12588 5750 50  0001 C CNN
+F 3 "~" H 12550 5900 50  0001 C CNN
+	1    12550 5900
 	1    0    0    -1  
 $EndComp
-Text Label 12850 5900 3    50   ~ 0
+Text Label 12950 5950 3    50   ~ 0
 VGND
 Wire Wire Line
-	11850 5550 11850 5600
+	11950 5600 11950 5650
 $Comp
-L Device:C C31
+L EEGamp-rescue:C-Device C31
 U 1 1 5CC8A612
-P 12050 5800
-F 0 "C31" H 12050 5900 50  0000 L CNN
-F 1 "100nF" H 12050 5700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12088 5650 50  0001 C CNN
-F 3 "~" H 12050 5800 50  0001 C CNN
-	1    12050 5800
+P 12150 5850
+F 0 "C31" H 12150 5950 50  0000 L CNN
+F 1 "100nF" H 12150 5750 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12188 5700 50  0001 C CNN
+F 3 "~" H 12150 5850 50  0001 C CNN
+	1    12150 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11850 5600 12050 5600
+	11950 5650 12150 5650
 Wire Wire Line
-	12050 5600 12050 5650
+	12150 5650 12150 5700
 Wire Wire Line
-	11850 6250 12050 6250
+	11950 6300 12150 6300
 Wire Wire Line
-	12050 6250 12050 5950
-Connection ~ 12050 6250
+	12150 6300 12150 6000
+Connection ~ 12150 6300
 Wire Wire Line
-	12450 6250 12450 6000
+	12550 6300 12550 6050
 Wire Wire Line
-	12450 5700 12450 5600
+	12550 5750 12550 5650
 Wire Wire Line
-	12850 5600 12850 5900
+	12950 5650 12950 5950
 Wire Wire Line
-	12450 5600 12850 5600
+	12550 5650 12950 5650
 Wire Wire Line
 	5300 5650 5300 5450
 $Comp
-L Device:C C12
+L EEGamp-rescue:C-Device C12
 U 1 1 5CCB07A4
 P 5450 4600
 F 0 "C12" V 5198 4600 50  0000 C CNN
 F 1 "100nF" V 5289 4600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5488 4450 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 5488 4450 50  0001 C CNN
 F 3 "~" H 5450 4600 50  0001 C CNN
 	1    5450 4600
 	0    -1   -1   0   
@@ -1653,7 +1520,7 @@ Connection ~ 5650 4600
 Wire Wire Line
 	5650 4600 5900 4600
 $Comp
-L power:+5V #PWR0110
+L EEGamp-rescue:+5V-power #PWR0110
 U 1 1 5CCD7EB4
 P 5300 4400
 F 0 "#PWR0110" H 5300 4250 50  0001 C CNN
@@ -1664,111 +1531,94 @@ F 3 "" H 5300 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x17_Odd_Even J1
-U 1 1 5CCDBFEC
-P 14400 8500
-F 0 "J1" H 14450 9517 50  0000 C CNN
-F 1 "Conn_02x17" H 14450 9426 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x17_P2.54mm_Horizontal_Lock" H 14400 8500 50  0001 C CNN
-F 3 "~" H 14400 8500 50  0001 C CNN
-	1    14400 8500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP1
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP1
 U 1 1 5CCDC2E9
-P 14950 7800
-F 0 "JP1" H 15200 7800 50  0000 C CNN
-F 1 "SJ201" H 14950 7914 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 14950 7800 50  0001 C CNN
-F 3 "~" H 14950 7800 50  0001 C CNN
-	1    14950 7800
+P 15150 7800
+F 0 "JP1" H 15400 7800 50  0000 C CNN
+F 1 "SJ201" H 15150 7914 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 7800 50  0001 C CNN
+F 3 "~" H 15150 7800 50  0001 C CNN
+	1    15150 7800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP2
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP2
 U 1 1 5CCDD07A
-P 14950 7900
-F 0 "JP2" H 15200 7900 50  0000 C CNN
-F 1 "SJ202" H 14950 8014 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 14950 7900 50  0001 C CNN
-F 3 "~" H 14950 7900 50  0001 C CNN
-	1    14950 7900
+P 15150 7900
+F 0 "JP2" H 15400 7900 50  0000 C CNN
+F 1 "SJ202" H 15150 8014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 7900 50  0001 C CNN
+F 3 "~" H 15150 7900 50  0001 C CNN
+	1    15150 7900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP3
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP3
 U 1 1 5CCDD142
-P 14950 8000
-F 0 "JP3" H 15200 8000 50  0000 C CNN
-F 1 "SJ203" H 14950 8114 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 14950 8000 50  0001 C CNN
-F 3 "~" H 14950 8000 50  0001 C CNN
-	1    14950 8000
+P 15150 8000
+F 0 "JP3" H 15400 8000 50  0000 C CNN
+F 1 "SJ203" H 15150 8114 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 8000 50  0001 C CNN
+F 3 "~" H 15150 8000 50  0001 C CNN
+	1    15150 8000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14700 7800 14800 7800
+	14900 7800 15000 7800
 Wire Wire Line
-	14700 7900 14800 7900
+	14900 7900 15000 7900
 Wire Wire Line
-	14700 8000 14800 8000
+	14900 8000 15000 8000
 Wire Wire Line
-	15100 8000 15100 7900
+	15300 8000 15300 7900
 Wire Wire Line
-	15100 7900 15100 7800
-Connection ~ 15100 7900
-Text Label 15100 7600 1    50   ~ 0
+	15300 7900 15300 7800
+Connection ~ 15300 7900
+Text Label 15300 7600 1    50   ~ 0
 ADIN0
 Wire Wire Line
-	15100 7800 15100 7600
-Connection ~ 15100 7800
+	15300 7800 15300 7600
+Connection ~ 15300 7800
 $Comp
-L Jumper:SolderJumper_2_Open JP4
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP4
 U 1 1 5CDF7464
-P 15350 8100
-F 0 "JP4" H 15600 8100 50  0000 C CNN
-F 1 "SJ201" H 15350 8214 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15350 8100 50  0001 C CNN
-F 3 "~" H 15350 8100 50  0001 C CNN
-	1    15350 8100
+P 15550 8100
+F 0 "JP4" H 15800 8100 50  0000 C CNN
+F 1 "SJ201" H 15550 8214 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8100 50  0001 C CNN
+F 3 "~" H 15550 8100 50  0001 C CNN
+	1    15550 8100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP5
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP5
 U 1 1 5CDF746B
-P 15350 8200
-F 0 "JP5" H 15600 8200 50  0000 C CNN
-F 1 "SJ202" H 15350 8314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15350 8200 50  0001 C CNN
-F 3 "~" H 15350 8200 50  0001 C CNN
-	1    15350 8200
+P 15550 8200
+F 0 "JP5" H 15800 8200 50  0000 C CNN
+F 1 "SJ202" H 15550 8314 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8200 50  0001 C CNN
+F 3 "~" H 15550 8200 50  0001 C CNN
+	1    15550 8200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP6
+L EEGamp-rescue:SolderJumper_2_Open-Jumper JP6
 U 1 1 5CDF7472
-P 15350 8300
-F 0 "JP6" H 15600 8300 50  0000 C CNN
-F 1 "SJ203" H 15350 8414 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15350 8300 50  0001 C CNN
-F 3 "~" H 15350 8300 50  0001 C CNN
-	1    15350 8300
+P 15550 8300
+F 0 "JP6" H 15800 8300 50  0000 C CNN
+F 1 "SJ203" H 15550 8414 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8300 50  0001 C CNN
+F 3 "~" H 15550 8300 50  0001 C CNN
+	1    15550 8300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	15500 8300 15500 8200
+	15700 8300 15700 8200
 Wire Wire Line
-	15500 8200 15500 8100
-Connection ~ 15500 8200
-Text Label 15500 7600 1    50   ~ 0
+	15700 8200 15700 8100
+Connection ~ 15700 8200
+Text Label 15700 7600 1    50   ~ 0
 ADIN1
-Wire Wire Line
-	14700 8100 15200 8100
-Wire Wire Line
-	15200 8200 14700 8200
-Wire Wire Line
-	14700 8300 15200 8300
 Wire Wire Line
 	14200 7900 14100 7900
 Wire Wire Line
@@ -1791,110 +1641,74 @@ Wire Wire Line
 	14100 8300 14200 8300
 Connection ~ 14100 8200
 Wire Wire Line
-	15500 7600 15500 8100
-Connection ~ 15500 8100
+	15700 7600 15700 8100
+Connection ~ 15700 8100
 Text Label 14000 8300 2    50   ~ 0
 GNDA
 Connection ~ 14100 8300
 $Comp
-L Amplifier_Operational:TLC277 U1
-U 1 1 5CF6A1E3
-P 11950 7450
-F 0 "U1" H 12000 7600 50  0000 C CNN
-F 1 "TLC277" H 12050 7300 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 7450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 11950 7450 50  0001 C CNN
-	1    11950 7450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	14700 7750 14700 7700
-Wire Wire Line
-	14700 7350 12450 7350
-Connection ~ 14700 7700
-Wire Wire Line
-	14700 7700 14700 7350
-$Comp
-L Device:C C27
+L EEGamp-rescue:C-Device C27
 U 1 1 5CF97831
-P 11800 7150
-F 0 "C27" V 11548 7150 50  0000 C CNN
-F 1 "100nF" V 11639 7150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11838 7000 50  0001 C CNN
-F 3 "~" H 11800 7150 50  0001 C CNN
-	1    11800 7150
+P 11800 7050
+F 0 "C27" V 11548 7050 50  0000 C CNN
+F 1 "100nF" V 11639 7050 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11838 6900 50  0001 C CNN
+F 3 "~" H 11800 7050 50  0001 C CNN
+	1    11800 7050
 	0    1    1    0   
 $EndComp
-$Comp
-L Amplifier_Operational:TLC277 U1
-U 3 1 5CF97F43
-P 12150 7450
-F 0 "U1" H 12108 7450 50  0001 L CNN
-F 1 "TLC277" H 12108 7405 50  0001 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12150 7450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12150 7450 50  0001 C CNN
-	3    12150 7450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	11950 7150 12050 7150
-Wire Wire Line
-	11650 7150 11600 7150
-Wire Wire Line
-	11600 7150 11600 7450
+	11650 7050 11600 7050
 Wire Wire Line
 	11600 7450 11650 7450
 $Comp
-L Device:C C28
+L EEGamp-rescue:C-Device C28
 U 1 1 5CFDD237
-P 11800 7750
-F 0 "C28" V 12050 7750 50  0000 C CNN
-F 1 "100nF" V 11950 7750 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11838 7600 50  0001 C CNN
-F 3 "~" H 11800 7750 50  0001 C CNN
-	1    11800 7750
+P 11800 7850
+F 0 "C28" V 12050 7850 50  0000 C CNN
+F 1 "100nF" V 11950 7850 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11838 7700 50  0001 C CNN
+F 3 "~" H 11800 7850 50  0001 C CNN
+	1    11800 7850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11950 7750 12050 7750
+	11950 7850 12050 7850
 Wire Wire Line
-	11650 7750 11600 7750
+	11650 7850 11600 7850
 Wire Wire Line
-	11600 7750 11600 7450
-Connection ~ 11600 7450
+	11600 7850 11600 7750
 $Comp
-L Device:CP C29
+L EEGamp-rescue:CP-Device C29
 U 1 1 5D00C932
-P 11800 8200
-F 0 "C29" V 12050 8200 50  0000 C CNN
-F 1 "47μF tan 1ohm" V 11950 8100 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 11838 8050 50  0001 C CNN
-F 3 "~" H 11800 8200 50  0001 C CNN
-	1    11800 8200
+P 11800 8300
+F 0 "C29" V 12050 8300 50  0000 C CNN
+F 1 "47μF tan 1ohm" V 11950 8200 50  0000 C CNN
+F 2 "Capacitors_Tantalum:CP_EIA-3528-15_AVX-H" H 11838 8150 50  0001 C CNN
+F 3 "~" H 11800 8300 50  0001 C CNN
+	1    11800 8300
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	11600 7750 11600 8200
+	11600 7850 11600 8300
 Wire Wire Line
-	11600 8200 11650 8200
-Connection ~ 11600 7750
+	11600 8300 11650 8300
+Connection ~ 11600 7850
 Wire Wire Line
-	12050 7750 12050 8200
+	12050 7850 12050 8300
 Wire Wire Line
-	12050 8200 11950 8200
-Connection ~ 12050 7750
+	12050 8300 11950 8300
+Connection ~ 12050 7850
 Wire Wire Line
-	11600 8200 11600 8550
-Wire Wire Line
-	12300 8550 12300 7550
-Connection ~ 11600 8200
+	11600 8300 11600 8650
+Connection ~ 11600 8300
 $Comp
-L Device:C C34
+L EEGamp-rescue:C-Device C34
 U 1 1 5D06DE3C
 P 12450 7500
 F 0 "C34" H 12565 7546 50  0000 L CNN
 F 1 "10nF" H 12565 7455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12488 7350 50  0001 C CNN
+F 2 "Capacitors:C_0603" H 12488 7350 50  0001 C CNN
 F 3 "~" H 12450 7500 50  0001 C CNN
 	1    12450 7500
 	1    0    0    -1  
@@ -1903,61 +1717,51 @@ Connection ~ 12450 7350
 Wire Wire Line
 	12450 7350 12250 7350
 $Comp
-L Device:C C35
+L EEGamp-rescue:C-Device C35
 U 1 1 5D06DFBB
-P 12800 7700
-F 0 "C35" H 12915 7746 50  0000 L CNN
-F 1 "10nF" H 12915 7655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12838 7550 50  0001 C CNN
-F 3 "~" H 12800 7700 50  0001 C CNN
-	1    12800 7700
+P 12800 7950
+F 0 "C35" H 12915 7996 50  0000 L CNN
+F 1 "10nF" H 12915 7905 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12838 7800 50  0001 C CNN
+F 3 "~" H 12800 7950 50  0001 C CNN
+	1    12800 7950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C36
+L EEGamp-rescue:CP-Device C36
 U 1 1 5D06E15A
-P 13300 7700
-F 0 "C36" H 13418 7746 50  0000 L CNN
-F 1 "47μF" H 13418 7655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 13338 7550 50  0001 C CNN
-F 3 "~" H 13300 7700 50  0001 C CNN
-	1    13300 7700
+P 13300 7950
+F 0 "C36" H 13418 7996 50  0000 L CNN
+F 1 "47μF" H 13418 7905 50  0000 L CNN
+F 2 "Capacitors_Tantalum:CP_EIA-3528-15_AVX-H" H 13338 7800 50  0001 C CNN
+F 3 "~" H 13300 7950 50  0001 C CNN
+	1    13300 7950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12450 7650 12450 7750
-Wire Wire Line
-	12450 7750 12150 7750
-Wire Wire Line
-	12050 7150 12800 7150
-Wire Wire Line
-	12800 7150 12800 7550
-Connection ~ 12050 7150
-Connection ~ 12800 7550
+	12450 7850 12150 7850
 Wire Wire Line
 	14200 7550 14200 7700
-Text Label 13600 7850 0    50   ~ 0
-GNDA
 $Comp
-L power:GNDA #PWR0111
+L EEGamp-rescue:GNDA-power #PWR0111
 U 1 1 5D157363
-P 12150 7850
-F 0 "#PWR0111" H 12150 7600 50  0001 C CNN
-F 1 "GNDA" H 12155 7677 50  0000 C CNN
-F 2 "" H 12150 7850 50  0001 C CNN
-F 3 "" H 12150 7850 50  0001 C CNN
-	1    12150 7850
+P 12150 7950
+F 0 "#PWR0111" H 12150 7700 50  0001 C CNN
+F 1 "GNDA" H 12155 7777 50  0000 C CNN
+F 2 "" H 12150 7950 50  0001 C CNN
+F 3 "" H 12150 7950 50  0001 C CNN
+	1    12150 7950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11600 8550 12300 8550
+	11600 8650 12300 8650
 Wire Wire Line
 	12300 7550 12250 7550
 Wire Wire Line
-	12150 7850 12150 7750
-Connection ~ 12150 7750
+	12150 7950 12150 7850
+Connection ~ 12150 7850
 Wire Wire Line
-	12150 7750 12050 7750
+	12150 7850 12050 7850
 Text Label 14100 7800 2    50   ~ 0
 2.0V
 Wire Wire Line
@@ -1966,42 +1770,39 @@ Text Label 11350 8000 3    50   ~ 0
 2.0V
 Wire Wire Line
 	11600 7750 11350 7750
-Wire Wire Line
-	11350 7750 11350 8000
 Text Label 10550 7600 1    50   ~ 0
 VGND
 Wire Wire Line
 	11350 7750 10550 7750
-Connection ~ 11350 7750
 $Comp
-L Device:R_US R32
+L EEGamp-rescue:R_US-Device R32
 U 1 1 5D249354
 P 10400 8000
 F 0 "R32" V 10195 8000 50  0000 C CNN
 F 1 "10k" V 10286 8000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10440 7990 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10440 7990 50  0001 C CNN
 F 3 "~" H 10400 8000 50  0001 C CNN
 	1    10400 8000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R33
+L EEGamp-rescue:R_US-Device R33
 U 1 1 5D2495F5
 P 10400 8500
 F 0 "R33" V 10600 8500 50  0000 C CNN
 F 1 "10k" V 10500 8500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10440 8490 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10440 8490 50  0001 C CNN
 F 3 "~" H 10400 8500 50  0001 C CNN
 	1    10400 8500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R36
+L EEGamp-rescue:R_US-Device R36
 U 1 1 5D29BC2B
 P 10550 8250
 F 0 "R36" H 10618 8296 50  0000 L CNN
 F 1 "100" H 10618 8205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10590 8240 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10590 8240 50  0001 C CNN
 F 3 "~" H 10550 8250 50  0001 C CNN
 	1    10550 8250
 	1    0    0    -1  
@@ -2011,23 +1812,23 @@ Wire Wire Line
 Wire Wire Line
 	10550 8400 10550 8500
 $Comp
-L Device:R_US R37
+L EEGamp-rescue:R_US-Device R37
 U 1 1 5D2EF7AA
 P 10850 8500
 F 0 "R37" V 11050 8500 50  0000 C CNN
 F 1 "1M" V 10950 8500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10890 8490 50  0001 C CNN
+F 2 "Resistors:R_0603" V 10890 8490 50  0001 C CNN
 F 3 "~" H 10850 8500 50  0001 C CNN
 	1    10850 8500
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R40
+L EEGamp-rescue:R_US-Device R40
 U 1 1 5D2EF99D
 P 11250 8500
 F 0 "R40" V 11450 8500 50  0000 C CNN
 F 1 "1M" V 11350 8500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11290 8490 50  0001 C CNN
+F 2 "Resistors:R_0603" V 11290 8490 50  0001 C CNN
 F 3 "~" H 11250 8500 50  0001 C CNN
 	1    11250 8500
 	0    1    1    0   
@@ -2049,26 +1850,15 @@ Wire Wire Line
 	10550 7600 10550 7750
 Wire Wire Line
 	11400 8500 11400 9650
-Wire Wire Line
-	11400 9650 15000 9650
-Wire Wire Line
-	15000 9100 14700 9100
-Text Label 14750 9100 0    50   ~ 0
+Text Label 14950 9100 0    50   ~ 0
 PWM
 Wire Wire Line
-	15000 9100 15000 9650
+	15200 9100 15200 9650
 Wire Wire Line
 	10600 2400 10600 2500
 Connection ~ 10600 2400
 Wire Wire Line
 	10600 2400 10800 2400
-Wire Wire Line
-	10200 2150 10200 2400
-Wire Wire Line
-	10200 2150 10950 2150
-Connection ~ 10200 2400
-Wire Wire Line
-	10200 2400 10300 2400
 Wire Wire Line
 	12150 3500 12500 3500
 Wire Wire Line
@@ -2077,250 +1867,465 @@ Connection ~ 10600 5150
 Wire Wire Line
 	10600 5150 10800 5150
 Wire Wire Line
-	10200 4900 10200 5150
+	10200 4800 10950 4800
 Wire Wire Line
-	10200 4900 10950 4900
-Connection ~ 10200 5150
-Wire Wire Line
-	10200 5150 10300 5150
-Wire Wire Line
-	12050 6250 12450 6250
-Connection ~ 13300 7550
-Wire Wire Line
-	13300 7550 14200 7550
-Wire Wire Line
-	12800 7550 13300 7550
-Wire Wire Line
-	12800 7850 13300 7850
-Connection ~ 13300 7850
-Wire Wire Line
-	13750 8300 13750 7850
-Wire Wire Line
-	13750 8300 14100 8300
-Wire Wire Line
-	13300 7850 13750 7850
-Connection ~ 3000 1900
-$Comp
-L Transistor_BJT:BC847 Q1
-U 1 1 5C7C5979
-P 2900 2100
-F 0 "Q1" H 2800 1950 50  0000 L CNN
-F 1 "BC847" H 2650 2250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 2025 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2900 2100 50  0001 L CNN
-	1    2900 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC847 Q2
-U 1 1 5C7E3869
-P 2900 2700
-F 0 "Q2" H 2800 2550 50  0000 L CNN
-F 1 "BC847" H 2650 2850 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 2625 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2900 2700 50  0001 L CNN
-	1    2900 2700
-	1    0    0    1   
-$EndComp
-Connection ~ 3000 2900
-Connection ~ 3250 2900
-Connection ~ 3250 1900
-$Comp
-L Transistor_BJT:BC847 Q3
-U 1 1 5C85F07D
-P 2900 4850
-F 0 "Q3" H 2800 4700 50  0000 L CNN
-F 1 "BC847" H 2650 5000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 4775 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2900 4850 50  0001 L CNN
-	1    2900 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC847 Q4
-U 1 1 5C87D71F
-P 2900 5450
-F 0 "Q4" H 2800 5300 50  0000 L CNN
-F 1 "BC847" H 2650 5600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 5375 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2900 5450 50  0001 L CNN
-	1    2900 5450
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:BC857 Q7
-U 1 1 5C89C8BE
-P 3350 4850
-F 0 "Q7" H 3250 4700 50  0000 L CNN
-F 1 "BC857" H 3100 5000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC856.pdf" H 3350 4850 50  0001 L CNN
-	1    3350 4850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC857 Q8
-U 1 1 5C89CBB3
-P 3350 5450
-F 0 "Q8" H 3250 5300 50  0000 L CNN
-F 1 "BC857" H 3100 5600 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 5375 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC856.pdf" H 3350 5450 50  0001 L CNN
-	1    3350 5450
-	-1   0    0    1   
-$EndComp
-Connection ~ 3250 5650
-Connection ~ 3250 4650
-$Comp
-L Transistor_BJT:BC857 Q5
-U 1 1 5C8D9F0F
-P 3350 2100
-F 0 "Q5" H 3250 1950 50  0000 L CNN
-F 1 "BC857" H 3100 2250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2025 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC856.pdf" H 3350 2100 50  0001 L CNN
-	1    3350 2100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC857 Q6
-U 1 1 5C8F8151
-P 3350 2700
-F 0 "Q6" H 3250 2550 50  0000 L CNN
-F 1 "BC857" H 3100 2850 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2625 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC856.pdf" H 3350 2700 50  0001 L CNN
-	1    3350 2700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TLC277 U4
-U 3 1 5CA04BBD
-P 5150 6850
-F 0 "U4" H 5108 6896 50  0000 L CNN
-F 1 "TLC277" H 5108 6805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 5150 6850 50  0001 C CNN
-	3    5150 6850
-	1    0    0    -1  
-$EndComp
+	12150 6300 12550 6300
 Wire Wire Line
 	5050 6400 5050 6550
 Connection ~ 5050 6400
 Wire Wire Line
 	5050 7150 5050 7300
 Connection ~ 5050 7300
-$Comp
-L Amplifier_Operational:TLC277 U6
-U 3 1 5CA5F804
-P 11950 5950
-F 0 "U6" H 11650 6050 50  0000 L CNN
-F 1 "TLC277" H 11650 5950 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 5950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 11950 5950 50  0001 C CNN
-	3    11950 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	11850 5600 11850 5650
-Connection ~ 11850 5600
-$Comp
-L Amplifier_Operational:TLC277 U5
-U 3 1 5CA9C11A
-P 12050 3200
-F 0 "U5" H 11750 3300 50  0000 L CNN
-F 1 "TLC277" H 11750 3200 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 3200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlc272.pdf" H 12050 3200 50  0001 C CNN
-	3    12050 3200
-	1    0    0    -1  
-$EndComp
+	11950 5650 11950 5700
+Connection ~ 11950 5650
 Wire Wire Line
 	11950 2900 11950 2850
 Connection ~ 11950 2850
 $Comp
-L Connector:TestPoint_2Pole TP1
-U 1 1 5C9CF83E
-P 1450 2400
-F 0 "TP1" V 1200 2250 50  0000 L CNN
-F 1 "CH2" V 1700 2250 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1450 2400 50  0001 C CNN
-F 3 "~" H 1450 2400 50  0001 C CNN
-	1    1450 2400
-	0    1    1    0   
+L Transistor_NPN:BC847 Q1
+U 1 1 5E176942
+P 2900 2100
+F 0 "Q1" H 2800 1950 50  0000 L CNN
+F 1 "BC847" H 2650 2250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 2025 50  0001 L CIN
+F 3 "" H 2900 2100 50  0001 L CNN
+	1    2900 2100
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 1700 1450 2200
-Wire Wire Line
-	1450 2600 1450 3100
+Connection ~ 3000 1900
 $Comp
-L Connector:TestPoint_2Pole TP2
-U 1 1 5CA29D1B
-P 1450 5150
-F 0 "TP2" V 1200 5000 50  0000 L CNN
-F 1 "CH1" V 1700 5000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 1450 5150 50  0001 C CNN
-F 3 "~" H 1450 5150 50  0001 C CNN
-	1    1450 5150
-	0    1    1    0   
+L Transistor_NPN:BC847 Q2
+U 1 1 5E177FCB
+P 2900 2700
+F 0 "Q2" H 2800 2850 50  0000 L CNN
+F 1 "BC847" H 2650 2550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 2625 50  0001 L CIN
+F 3 "" H 2900 2700 50  0001 L CNN
+	1    2900 2700
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 4450 1450 4950
-Wire Wire Line
-	1450 5350 1450 5850
+Connection ~ 3000 2900
 $Comp
-L Connector:TestPoint TP4
-U 1 1 5CAFF7BF
-P 6300 1750
-F 0 "TP4" H 6358 1870 50  0000 L CNN
-F 1 "DC Check CH2" H 6358 1779 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6500 1750 50  0001 C CNN
-F 3 "~" H 6500 1750 50  0001 C CNN
-	1    6300 1750
+L Transistor_NPN:BC847 Q3
+U 1 1 5E17A15E
+P 2900 4850
+F 0 "Q3" H 2800 4700 50  0000 L CNN
+F 1 "BC847" H 2650 5000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 4775 50  0001 L CIN
+F 3 "" H 2900 4850 50  0001 L CNN
+	1    2900 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 4650
+$Comp
+L Transistor_NPN:BC847 Q4
+U 1 1 5E17AD1D
+P 2900 5450
+F 0 "Q4" H 2800 5600 50  0000 L CNN
+F 1 "BC847" H 2650 5300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 5375 50  0001 L CIN
+F 3 "" H 2900 5450 50  0001 L CNN
+	1    2900 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 5650
+$Comp
+L Transistor_PNP:BC857 Q5
+U 1 1 5E1978B3
+P 3350 2100
+F 0 "Q5" H 3250 2250 50  0000 L CNN
+F 1 "BC857" H 3100 1950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2025 50  0001 L CIN
+F 3 "" H 3350 2100 50  0001 L CNN
+	1    3350 2100
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 1900
+$Comp
+L Transistor_PNP:BC857 Q6
+U 1 1 5E198185
+P 3350 2700
+F 0 "Q6" H 3250 2550 50  0000 L CNN
+F 1 "BC857" H 3100 2850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 2625 50  0001 L CIN
+F 3 "" H 3350 2700 50  0001 L CNN
+	1    3350 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 2900
+$Comp
+L Transistor_PNP:BC857 Q7
+U 1 1 5E19B0AF
+P 3350 4850
+F 0 "Q7" H 3250 5000 50  0000 L CNN
+F 1 "BC857" H 3100 4700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4775 50  0001 L CIN
+F 3 "" H 3350 4850 50  0001 L CNN
+	1    3350 4850
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 4650
+$Comp
+L Transistor_PNP:BC857 Q8
+U 1 1 5E19BAA9
+P 3350 5450
+F 0 "Q8" H 3250 5300 50  0000 L CNN
+F 1 "BC857" H 3100 5600 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 5375 50  0001 L CIN
+F 3 "" H 3350 5450 50  0001 L CNN
+	1    3350 5450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 5650
+$Comp
+L Amplifier_Instrumentation:AD620 U4
+U 1 1 5E1E2FFA
+P 5400 5150
+F 0 "U4" H 5550 5300 50  0000 L CNN
+F 1 "AD620" H 5550 5000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 5150 50  0001 C CNN
+F 3 "" H 5400 5150 50  0001 C CNN
+	1    5400 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP6
-U 1 1 5CB3D2B3
-P 9750 8000
-F 0 "TP6" V 9945 8074 50  0000 C CNN
-F 1 "CalGND" V 9854 8074 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9950 8000 50  0001 C CNN
-F 3 "~" H 9950 8000 50  0001 C CNN
-	1    9750 8000
-	0    -1   -1   0   
+L Amplifier_Instrumentation:AD620 U3
+U 1 1 5E1E748E
+P 5400 2400
+F 0 "U3" H 5550 2550 50  0000 L CNN
+F 1 "AD620" H 5550 2250 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 2400 50  0001 C CNN
+F 3 "" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2050 10950 2050
+$Comp
+L Amplifier_Operational:AD822 U5
+U 2 1 5E23EF7D
+P 11100 2500
+F 0 "U5" H 11100 2700 50  0000 C CNN
+F 1 "AD822" H 11100 2300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 2500 50  0001 C CNN
+F 3 "" H 11100 2500 50  0001 C CNN
+	2    11100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 2050 11500 2050
+$Comp
+L EEGamp-rescue:C-Device C23
+U 1 1 5CB2A06F
+P 11100 2050
+F 0 "C23" V 10848 2050 50  0000 C CNN
+F 1 "33nF 5%" V 10939 2050 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11138 1900 50  0001 C CNN
+F 3 "~" H 11100 2050 50  0001 C CNN
+	1    11100 2050
+	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP7
-U 1 1 5CB3D770
-P 9750 8500
-F 0 "TP7" V 9650 8600 50  0000 C CNN
-F 1 "CalU" V 9550 8600 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9950 8500 50  0001 C CNN
-F 3 "~" H 9950 8500 50  0001 C CNN
-	1    9750 8500
-	0    -1   -1   0   
+L Amplifier_Operational:AD822 U2
+U 1 1 5E23E34C
+P 8450 2500
+F 0 "U2" H 8450 2867 50  0000 C CNN
+F 1 "AD822" H 8450 2776 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 2500 50  0001 C CNN
+F 3 "" H 8450 2500 50  0001 C CNN
+	1    8450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2400 10200 2400
+Wire Wire Line
+	10200 2050 10200 2400
+Connection ~ 10200 2400
+Wire Wire Line
+	10200 2400 10300 2400
+Wire Wire Line
+	11500 2050 11500 2500
+$Comp
+L Amplifier_Operational:AD822 U2
+U 3 1 5E24A052
+P 12050 3200
+F 0 "U2" H 11750 3250 50  0000 L CNN
+F 1 "AD822" H 11650 3150 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 3200 50  0001 C CNN
+F 3 "" H 12050 3200 50  0001 C CNN
+	3    12050 3200
+	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
-U 1 1 5CB5F41E
+L EEGamp-rescue:C-Device C30
+U 1 1 5CBFD019
+P 12150 3050
+F 0 "C30" H 12150 3150 50  0000 L CNN
+F 1 "100nF" H 12150 2950 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12188 2900 50  0001 C CNN
+F 3 "~" H 12150 3050 50  0001 C CNN
+	1    12150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U5
+U 1 1 5E377076
+P 8450 5250
+F 0 "U5" H 8450 5617 50  0000 C CNN
+F 1 "AD822" H 8450 5526 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 5250 50  0001 C CNN
+F 3 "" H 8450 5250 50  0001 C CNN
+	1    8450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U6
+U 2 1 5E377B26
+P 11100 5250
+F 0 "U6" H 11100 5450 50  0000 C CNN
+F 1 "AD822" H 11100 5050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 5250 50  0001 C CNN
+F 3 "" H 11100 5250 50  0001 C CNN
+	2    11100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U5
+U 3 1 5E37B913
+P 12050 6000
+F 0 "U5" H 11750 6050 50  0000 L CNN
+F 1 "AD822" H 11650 5950 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 6000 50  0001 C CNN
+F 3 "" H 12050 6000 50  0001 C CNN
+	3    12050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5150 10200 5150
+Wire Wire Line
+	11500 4800 11500 5250
+Wire Wire Line
+	10200 4800 10200 5150
+Connection ~ 10200 5150
+Wire Wire Line
+	10200 5150 10300 5150
+$Comp
+L Amplifier_Operational:AD822 U6
+U 1 1 5E4242D9
+P 11950 7450
+F 0 "U6" H 12000 7600 50  0000 C CNN
+F 1 "AD822" H 12050 7300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 7450 50  0001 C CNN
+F 3 "" H 11950 7450 50  0001 C CNN
+	1    11950 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U1
+U 1 1 5E42D7F6
+P 3900 7150
+F 0 "U1" H 3900 6783 50  0000 C CNN
+F 1 "AD822" H 3900 6874 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3900 7150 50  0001 C CNN
+F 3 "" H 3900 7150 50  0001 C CNN
+	1    3900 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U2
+U 2 1 5E43100A
+P 5350 3700
+F 0 "U2" H 5350 3333 50  0000 C CNN
+F 1 "AD822" H 5350 3424 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	2    5350 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U1
+U 3 1 5E434266
+P 5150 6850
+F 0 "U1" H 5108 6896 50  0000 L CNN
+F 1 "AD822" H 5108 6805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 6850 50  0001 C CNN
+F 3 "" H 5150 6850 50  0001 C CNN
+	3    5150 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 7750 11350 8000
+Connection ~ 11350 7750
+Connection ~ 11600 7750
+$Comp
+L Amplifier_Operational:AD822 U6
+U 3 1 5E4ABADB
+P 12150 7450
+F 0 "U6" H 12108 7496 50  0001 L CNN
+F 1 "AD822" H 12100 7400 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12150 7450 50  0001 C CNN
+F 3 "" H 12150 7450 50  0001 C CNN
+	3    12150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 7050 12050 7050
+Wire Wire Line
+	11600 7050 11600 7450
+Connection ~ 11600 7450
+Wire Wire Line
+	11600 7450 11600 7750
+Wire Wire Line
+	12050 7850 12050 7750
+Wire Wire Line
+	12300 7550 12300 8650
+Wire Wire Line
+	12450 7650 12450 7850
+$Comp
+L Amplifier_Operational:AD822 U1
+U 2 1 5E42BF08
+P 2900 7550
+F 0 "U1" H 2900 7250 50  0000 C CNN
+F 1 "AD822" H 2900 7350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 7550 50  0001 C CNN
+F 3 "" H 2900 7550 50  0001 C CNN
+	2    2900 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:A2541WV-2P X1
+U 1 1 5E68CF92
+P 1450 2450
+F 0 "X1" H 1800 2250 50  0000 C CNN
+F 1 "CH2" H 1800 2550 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 1800 2000 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 1650 2750 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1700 2200 50  0001 C CIN "Manufacturer"
+	1    1450 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:A2541WV-2P X2
+U 1 1 5E68F89F
+P 1450 5200
+F 0 "X2" H 1800 5000 50  0000 C CNN
+F 1 "CH1" H 1800 5300 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 1800 4750 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 1650 5500 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1700 4950 50  0001 C CIN "Manufacturer"
+	1    1450 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1700 1450 2350
+Wire Wire Line
+	1450 2450 1450 3100
+Wire Wire Line
+	1450 4450 1450 5100
+Wire Wire Line
+	1450 5200 1450 5850
+$Comp
+L Connector_Header:A2541WV-2P X4
+U 1 1 5E73DCC5
+P 9750 8300
+F 0 "X4" H 10100 8100 50  0000 C CNN
+F 1 "Cal" H 10100 8400 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 10100 7850 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 9950 8600 50  0001 C CNN
+F 4 "Changjiang Connectors" H 10000 8050 50  0001 C CIN "Manufacturer"
+	1    9750 8300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 8000 9750 8200
+Wire Wire Line
+	9750 8300 9750 8500
+$Comp
+L Connector_Header:C81276 X3
+U 1 1 5E7E5413
 P 1450 7550
-F 0 "TP3" V 1645 7624 50  0000 C CNN
-F 1 "R_LEG" V 1554 7624 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 1650 7550 50  0001 C CNN
-F 3 "~" H 1650 7550 50  0001 C CNN
+F 0 "X3" H 1800 7350 50  0000 C CNN
+F 1 "R_LEG" H 1750 7450 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 1800 7100 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 1650 7850 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1750 7400 50  0001 C CIN "Manufacturer"
 	1    1450 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:C81276 X5
+U 1 1 5E7F47D1
+P 6300 1750
+F 0 "X5" V 6538 1672 50  0000 R CNN
+F 1 "DC Check CH1" V 6447 1672 50  0000 R CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 6650 1300 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 6500 2050 50  0001 C CNN
+F 4 "Changjiang Connectors" H 6600 1600 50  0001 C CIN "Manufacturer"
+	1    6300 1750
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP5
-U 1 1 5CB7EC6C
+L Connector_Header:C81276 X6
+U 1 1 5E7FEE29
 P 6300 4500
-F 0 "TP5" H 6358 4620 50  0000 L CNN
-F 1 "DC Check CH1" H 6358 4529 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 6500 4500 50  0001 C CNN
-F 3 "~" H 6500 4500 50  0001 C CNN
+F 0 "X6" V 6538 4422 50  0000 R CNN
+F 1 "DC Check CH2" V 6447 4422 50  0000 R CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 6650 4050 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 6500 4800 50  0001 C CNN
+F 4 "Changjiang Connectors" H 6600 4350 50  0001 C CIN "Manufacturer"
 	1    6300 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12800 7550 13300 7550
+Wire Wire Line
+	12800 8300 12800 8100
+Wire Wire Line
+	12800 8300 13300 8300
+Wire Wire Line
+	13300 8100 13300 8300
+Connection ~ 13300 8300
+Wire Wire Line
+	13300 8300 14100 8300
+Wire Wire Line
+	12800 7800 12800 7550
+Wire Wire Line
+	13300 7800 13300 7550
+Connection ~ 13300 7550
+Wire Wire Line
+	13300 7550 14200 7550
+Wire Wire Line
+	12800 7050 12800 7550
+Connection ~ 12800 7550
+Wire Wire Line
+	14900 7700 14900 7350
+Wire Wire Line
+	12050 7150 12050 7050
+Connection ~ 12050 7050
+Wire Wire Line
+	12050 7050 12800 7050
+Wire Wire Line
+	15200 9100 14900 9100
+Wire Wire Line
+	14900 8300 15400 8300
+Wire Wire Line
+	15400 8200 14900 8200
+Wire Wire Line
+	14900 8100 15400 8100
+Wire Wire Line
+	11400 9650 15200 9650
+Wire Wire Line
+	12450 7350 14900 7350
+$Comp
+L Connector_Header:PIN_HEADER_2X17_2.54 X7
+U 1 1 5EA5CA52
+P 14200 7700
+F 0 "X7" H 14550 7972 50  0000 C CNN
+F 1 "PIN_HEADER_2X17_2.54" H 14550 7881 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_2x17_P2.54mm_Vertical" H 14700 5300 50  0001 C CIN
+F 3 "" H 14400 8000 50  0001 C CNN
+	1    14200 7700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

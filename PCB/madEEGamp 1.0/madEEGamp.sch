@@ -1,0 +1,2349 @@
+EESchema Schematic File Version 4
+LIBS:madEEGamp-cache
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3250 2300 3250 2400
+Wire Wire Line
+	3000 2300 3000 2400
+Text Label 3900 2400 0    50   ~ 0
+VGND
+Wire Wire Line
+	3250 2400 3900 2400
+Connection ~ 3250 2400
+Wire Wire Line
+	3250 2400 3250 2500
+Wire Wire Line
+	3250 2400 3000 2400
+Connection ~ 3000 2400
+Wire Wire Line
+	3000 2400 3000 2500
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C6
+U 1 1 5C714DB3
+P 2350 2700
+F 0 "C6" H 2350 2800 50  0000 L CNN
+F 1 "100pF" H 2350 2600 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2388 2550 50  0001 C CNN
+F 3 "~" H 2350 2700 50  0001 C CNN
+	1    2350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C5
+U 1 1 5C714E2E
+P 2350 2100
+F 0 "C5" H 2350 2200 50  0000 L CNN
+F 1 "100pF" H 2350 2000 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2388 1950 50  0001 C CNN
+F 3 "~" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2250 2350 2550
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C1
+U 1 1 5C715550
+P 2000 2400
+F 0 "C1" H 2000 2500 50  0000 L CNN
+F 1 "10pF" H 2000 2300 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2038 2250 50  0001 C CNN
+F 3 "~" H 2000 2400 50  0001 C CNN
+	1    2000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2900 3250 2900
+Wire Wire Line
+	2000 2550 2000 3100
+Wire Wire Line
+	2000 1700 2000 2250
+Wire Wire Line
+	2000 1700 2350 1700
+Wire Wire Line
+	2350 1700 2350 1950
+Wire Wire Line
+	2000 3100 2350 3100
+Wire Wire Line
+	2350 3100 2350 2850
+Wire Wire Line
+	2350 1700 3000 1700
+Wire Wire Line
+	3000 1700 3000 1900
+Connection ~ 2350 1700
+Wire Wire Line
+	2350 3100 3000 3100
+Wire Wire Line
+	3000 3100 3000 2900
+Connection ~ 2350 3100
+Wire Wire Line
+	3250 1900 3250 1700
+Wire Wire Line
+	3250 1700 3500 1700
+Wire Wire Line
+	3250 2900 3250 3100
+Wire Wire Line
+	3250 3100 3550 3100
+Wire Wire Line
+	3950 1700 3900 1700
+Wire Wire Line
+	3850 3100 3950 3100
+Wire Wire Line
+	3900 2100 3550 2100
+Connection ~ 3900 1700
+Wire Wire Line
+	3900 1700 3800 1700
+Wire Wire Line
+	3950 3100 3950 3000
+Wire Wire Line
+	3950 2700 3550 2700
+Connection ~ 3950 3100
+Wire Wire Line
+	3950 3100 4000 3100
+Wire Wire Line
+	3950 3000 2600 3000
+Wire Wire Line
+	2600 3000 2600 2700
+Wire Wire Line
+	2600 2700 2700 2700
+Connection ~ 3950 3000
+Wire Wire Line
+	3950 3000 3950 2700
+Wire Wire Line
+	3900 1700 3900 1800
+Wire Wire Line
+	3900 1800 2600 1800
+Wire Wire Line
+	2600 1800 2600 2100
+Wire Wire Line
+	2600 2100 2700 2100
+Connection ~ 3900 1800
+Wire Wire Line
+	3900 1800 3900 2100
+Wire Wire Line
+	3000 1900 3250 1900
+Wire Wire Line
+	5000 1700 5000 2200
+Wire Wire Line
+	5000 3100 5000 2600
+Wire Wire Line
+	5000 2300 4950 2300
+Wire Wire Line
+	5000 2500 4950 2500
+Wire Wire Line
+	4450 2300 4450 2500
+Wire Wire Line
+	4450 2500 4450 3200
+Wire Wire Line
+	5800 3600 5650 3600
+Connection ~ 4450 2500
+Wire Wire Line
+	5650 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 4050
+Wire Wire Line
+	4850 4050 4850 3700
+Connection ~ 4850 3700
+Wire Wire Line
+	5800 3200 5800 3600
+Wire Wire Line
+	1450 1700 1700 1700
+Wire Wire Line
+	1450 3100 1700 3100
+Text Label 1450 1700 0    50   ~ 0
+CH2-
+Text Label 1450 3100 0    50   ~ 0
+CH2+
+Wire Wire Line
+	3250 5050 3250 5150
+Wire Wire Line
+	3000 5050 3000 5150
+Text Label 3900 5150 0    50   ~ 0
+VGND
+Wire Wire Line
+	3250 5150 3900 5150
+Connection ~ 3250 5150
+Wire Wire Line
+	3250 5150 3250 5250
+Wire Wire Line
+	3250 5150 3000 5150
+Connection ~ 3000 5150
+Wire Wire Line
+	3000 5150 3000 5250
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C8
+U 1 1 5C72C546
+P 2350 5450
+F 0 "C8" H 2350 5550 50  0000 L CNN
+F 1 "100pF" H 2350 5350 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2388 5300 50  0001 C CNN
+F 3 "~" H 2350 5450 50  0001 C CNN
+	1    2350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C7
+U 1 1 5C72C54D
+P 2350 4850
+F 0 "C7" H 2350 4950 50  0000 L CNN
+F 1 "100pF" H 2350 4750 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2388 4700 50  0001 C CNN
+F 3 "~" H 2350 4850 50  0001 C CNN
+	1    2350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5000 2350 5300
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C2
+U 1 1 5C72C555
+P 2000 5150
+F 0 "C2" H 2000 5250 50  0000 L CNN
+F 1 "10pF" H 2000 5050 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 2038 5000 50  0001 C CNN
+F 3 "~" H 2000 5150 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5650 3250 5650
+Wire Wire Line
+	2000 5300 2000 5850
+Wire Wire Line
+	2000 4450 2000 5000
+Wire Wire Line
+	2000 4450 2350 4450
+Wire Wire Line
+	2350 4450 2350 4700
+Wire Wire Line
+	2000 5850 2350 5850
+Wire Wire Line
+	2350 5850 2350 5600
+Wire Wire Line
+	2350 4450 3000 4450
+Wire Wire Line
+	3000 4450 3000 4650
+Connection ~ 2350 4450
+Wire Wire Line
+	2350 5850 3000 5850
+Wire Wire Line
+	3000 5850 3000 5650
+Connection ~ 2350 5850
+Wire Wire Line
+	3250 4650 3250 4450
+Wire Wire Line
+	3250 4450 3500 4450
+Wire Wire Line
+	3250 5650 3250 5850
+Wire Wire Line
+	3250 5850 3550 5850
+Wire Wire Line
+	3950 4450 3900 4450
+Wire Wire Line
+	3850 5850 3950 5850
+Wire Wire Line
+	3900 4850 3550 4850
+Connection ~ 3900 4450
+Wire Wire Line
+	3900 4450 3800 4450
+Wire Wire Line
+	3950 5850 3950 5750
+Wire Wire Line
+	3950 5450 3550 5450
+Connection ~ 3950 5850
+Wire Wire Line
+	3950 5850 4000 5850
+Wire Wire Line
+	3950 5750 2600 5750
+Wire Wire Line
+	2600 5750 2600 5450
+Wire Wire Line
+	2600 5450 2700 5450
+Connection ~ 3950 5750
+Wire Wire Line
+	3950 5750 3950 5450
+Wire Wire Line
+	3900 4450 3900 4550
+Wire Wire Line
+	3900 4550 2600 4550
+Wire Wire Line
+	2600 4550 2600 4850
+Wire Wire Line
+	2600 4850 2700 4850
+Connection ~ 3900 4550
+Wire Wire Line
+	3900 4550 3900 4850
+Wire Wire Line
+	3000 4650 3250 4650
+Wire Wire Line
+	5000 4450 5000 4950
+Wire Wire Line
+	5000 5850 5000 5350
+Wire Wire Line
+	5000 5050 4950 5050
+Wire Wire Line
+	5000 5250 4950 5250
+Wire Wire Line
+	4650 5050 4600 5050
+Wire Wire Line
+	4600 5250 4650 5250
+Wire Wire Line
+	3600 7150 3550 7150
+Wire Wire Line
+	4200 7250 4350 7250
+Wire Wire Line
+	4350 7250 4350 7500
+Wire Wire Line
+	4350 7500 3550 7500
+Wire Wire Line
+	3550 7500 3550 7150
+Connection ~ 3550 7150
+Wire Wire Line
+	3550 7150 3500 7150
+Wire Wire Line
+	1450 4450 1700 4450
+Wire Wire Line
+	1450 5850 1700 5850
+Text Label 1450 4450 0    50   ~ 0
+CH1-
+Text Label 1450 5850 0    50   ~ 0
+CH1+
+Wire Wire Line
+	3200 7150 3200 7450
+Wire Wire Line
+	2600 7550 2350 7550
+Wire Wire Line
+	1450 7550 1950 7550
+Text Label 1450 7550 0    50   ~ 0
+R_LEG
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C4
+U 1 1 5C7611DB
+P 2150 7800
+F 0 "C4" V 2400 7800 50  0000 C CNN
+F 1 "1nF" V 2300 7800 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 2188 7650 50  0001 C CNN
+F 3 "~" H 2150 7800 50  0001 C CNN
+	1    2150 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 7800 2350 7800
+Wire Wire Line
+	2350 7800 2350 7550
+Connection ~ 2350 7550
+Wire Wire Line
+	2350 7550 2300 7550
+Wire Wire Line
+	2000 7800 1950 7800
+Wire Wire Line
+	1950 7800 1950 7550
+Connection ~ 1950 7550
+Wire Wire Line
+	1950 7550 2000 7550
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C3
+U 1 1 5C76A052
+P 2150 7150
+F 0 "C3" V 1898 7150 50  0000 C CNN
+F 1 "1nF" V 1989 7150 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 2188 7000 50  0001 C CNN
+F 3 "~" H 2150 7150 50  0001 C CNN
+	1    2150 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 7550 1950 7150
+Wire Wire Line
+	1950 7150 2000 7150
+Wire Wire Line
+	2300 7150 3000 7150
+Connection ~ 3200 7150
+$Comp
+L madEEGamp-rescue:R_POT_US-Device-EEGamp-rescue RV1
+U 1 1 5C784EEF
+P 3450 7900
+F 0 "RV1" H 3383 7946 50  0000 R CNN
+F 1 "20k" H 3383 7855 50  0000 R CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 3450 7900 50  0001 C CNN
+F 3 "~" H 3450 7900 50  0001 C CNN
+	1    3450 7900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7650 3200 7900
+Wire Wire Line
+	3200 7900 3300 7900
+Text Label 3450 7650 1    50   ~ 0
+VGND
+Wire Wire Line
+	3450 7750 3450 7650
+Text Label 3450 8200 3    50   ~ 0
+GNDA
+Wire Wire Line
+	3450 8050 3450 8200
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R5
+U 1 1 5C7C3F4D
+P 2150 7550
+F 0 "R5" V 1945 7550 50  0000 C CNN
+F 1 "200k" V 2036 7550 50  0000 C CNN
+F 2 "Resistors:R_0603" V 2190 7540 50  0001 C CNN
+F 3 "~" H 2150 7550 50  0001 C CNN
+	1    2150 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R6
+U 1 1 5C7C40AF
+P 3350 7150
+F 0 "R6" V 3145 7150 50  0000 C CNN
+F 1 "10k" V 3236 7150 50  0000 C CNN
+F 2 "Resistors:R_0603" V 3390 7140 50  0001 C CNN
+F 3 "~" H 3350 7150 50  0001 C CNN
+	1    3350 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R10
+U 1 1 5C7CE568
+P 3700 5850
+F 0 "R10" V 3900 5850 50  0000 C CNN
+F 1 "2k2" V 3800 5850 50  0000 C CNN
+F 2 "Resistors:R_0603" V 3740 5840 50  0001 C CNN
+F 3 "~" H 3700 5850 50  0001 C CNN
+	1    3700 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R14
+U 1 1 5C7CE651
+P 4150 5850
+F 0 "R14" V 4350 5850 50  0000 C CNN
+F 1 "2k2" V 4250 5850 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4190 5840 50  0001 C CNN
+F 3 "~" H 4150 5850 50  0001 C CNN
+	1    4150 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R19
+U 1 1 5C7CE728
+P 4800 5250
+F 0 "R19" V 5000 5250 50  0000 C CNN
+F 1 "2k2" V 4900 5250 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4840 5240 50  0001 C CNN
+F 3 "~" H 4800 5250 50  0001 C CNN
+	1    4800 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R18
+U 1 1 5C7CE825
+P 4800 5050
+F 0 "R18" V 4595 5050 50  0000 C CNN
+F 1 "2k2" V 4686 5050 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4840 5040 50  0001 C CNN
+F 3 "~" H 4800 5050 50  0001 C CNN
+	1    4800 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R8
+U 1 1 5C7CEBF2
+P 3650 4450
+F 0 "R8" V 3445 4450 50  0000 C CNN
+F 1 "2k2" V 3536 4450 50  0000 C CNN
+F 2 "Resistors:R_0603" V 3690 4440 50  0001 C CNN
+F 3 "~" H 3650 4450 50  0001 C CNN
+	1    3650 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R12
+U 1 1 5C7CECFB
+P 4100 4450
+F 0 "R12" V 3895 4450 50  0000 C CNN
+F 1 "2k2" V 3986 4450 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4140 4440 50  0001 C CNN
+F 3 "~" H 4100 4450 50  0001 C CNN
+	1    4100 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R3
+U 1 1 5C7CEF43
+P 1850 4450
+F 0 "R3" V 1645 4450 50  0000 C CNN
+F 1 "2k2" V 1736 4450 50  0000 C CNN
+F 2 "Resistors:R_0603" V 1890 4440 50  0001 C CNN
+F 3 "~" H 1850 4450 50  0001 C CNN
+	1    1850 4450
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 4450
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R4
+U 1 1 5C7CF0FA
+P 1850 5850
+F 0 "R4" V 2050 5850 50  0000 C CNN
+F 1 "2k2" V 1950 5850 50  0000 C CNN
+F 2 "Resistors:R_0603" V 1890 5840 50  0001 C CNN
+F 3 "~" H 1850 5850 50  0001 C CNN
+	1    1850 5850
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 5850
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R15
+U 1 1 5C7CF3E8
+P 4550 3700
+F 0 "R15" V 4345 3700 50  0000 C CNN
+F 1 "10k" V 4436 3700 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4590 3690 50  0001 C CNN
+F 3 "~" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R2
+U 1 1 5C7CF56C
+P 1850 3100
+F 0 "R2" V 2050 3100 50  0000 C CNN
+F 1 "2k2" V 1950 3100 50  0000 C CNN
+F 2 "Resistors:R_0603" V 1890 3090 50  0001 C CNN
+F 3 "~" H 1850 3100 50  0001 C CNN
+	1    1850 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 3100
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R9
+U 1 1 5C7CF663
+P 3700 3100
+F 0 "R9" V 3900 3100 50  0000 C CNN
+F 1 "2k2" V 3800 3100 50  0000 C CNN
+F 2 "Resistors:R_0603" V 3740 3090 50  0001 C CNN
+F 3 "~" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R13
+U 1 1 5C7CF748
+P 4150 3100
+F 0 "R13" V 4350 3100 50  0000 C CNN
+F 1 "2k2" V 4250 3100 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4190 3090 50  0001 C CNN
+F 3 "~" H 4150 3100 50  0001 C CNN
+	1    4150 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R17
+U 1 1 5C7CF9D9
+P 4800 2500
+F 0 "R17" V 5000 2500 50  0000 C CNN
+F 1 "2k2" V 4900 2500 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4840 2490 50  0001 C CNN
+F 3 "~" H 4800 2500 50  0001 C CNN
+	1    4800 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R16
+U 1 1 5C7CFA7D
+P 4800 2300
+F 0 "R16" V 4595 2300 50  0000 C CNN
+F 1 "2k2" V 4686 2300 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4840 2290 50  0001 C CNN
+F 3 "~" H 4800 2300 50  0001 C CNN
+	1    4800 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R11
+U 1 1 5C7CFB77
+P 4100 1700
+F 0 "R11" V 3895 1700 50  0000 C CNN
+F 1 "2k2" V 3986 1700 50  0000 C CNN
+F 2 "Resistors:R_0603" V 4140 1690 50  0001 C CNN
+F 3 "~" H 4100 1700 50  0001 C CNN
+	1    4100 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R7
+U 1 1 5C7CFCF3
+P 3650 1700
+F 0 "R7" V 3855 1700 50  0000 C CNN
+F 1 "2k2" V 3764 1700 50  0000 C CNN
+F 2 "Resistors:R_0603" V 3690 1690 50  0001 C CNN
+F 3 "~" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R1
+U 1 1 5C7CFF66
+P 1850 1700
+F 0 "R1" V 2055 1700 50  0000 C CNN
+F 1 "2k2" V 1964 1700 50  0000 C CNN
+F 2 "Resistors:R_0603" V 1890 1690 50  0001 C CNN
+F 3 "~" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2000 1700
+Text Label 2850 6550 3    50   ~ 0
+GNDA
+Wire Wire Line
+	2650 6500 2850 6500
+Wire Wire Line
+	2850 6500 2850 6550
+Wire Wire Line
+	2650 6400 3000 6400
+Wire Wire Line
+	3000 6400 3000 7150
+Connection ~ 3000 7150
+Wire Wire Line
+	3000 7150 3200 7150
+Wire Wire Line
+	4250 4450 5000 4450
+Wire Wire Line
+	4300 5850 5000 5850
+Wire Wire Line
+	4600 5050 4600 5250
+Wire Wire Line
+	4600 5250 4600 7050
+Wire Wire Line
+	4200 7050 4600 7050
+Connection ~ 4600 5250
+Wire Wire Line
+	4250 1700 5000 1700
+Wire Wire Line
+	4450 2300 4650 2300
+Wire Wire Line
+	4450 2500 4650 2500
+Wire Wire Line
+	4850 3700 5050 3700
+Wire Wire Line
+	4850 4050 5800 4050
+Wire Wire Line
+	4700 3700 4850 3700
+Wire Wire Line
+	4300 3100 5000 3100
+Wire Wire Line
+	4450 3200 5800 3200
+Wire Wire Line
+	3000 6400 4400 6400
+Wire Wire Line
+	4400 3700 4400 6400
+Connection ~ 3000 6400
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C9
+U 1 1 5C883F0E
+P 5250 6400
+F 0 "C9" V 4998 6400 50  0000 C CNN
+F 1 "100nF" V 5089 6400 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 5288 6250 50  0001 C CNN
+F 3 "~" H 5250 6400 50  0001 C CNN
+	1    5250 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 6250 5050 6400
+Wire Wire Line
+	5050 6400 5100 6400
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C10
+U 1 1 5C8B4BA7
+P 5250 7300
+F 0 "C10" V 5500 7300 50  0000 C CNN
+F 1 "100nF" V 5400 7300 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 5288 7150 50  0001 C CNN
+F 3 "~" H 5250 7300 50  0001 C CNN
+	1    5250 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 6400 5500 6400
+Wire Wire Line
+	5500 6400 5500 6850
+Wire Wire Line
+	5500 7300 5400 7300
+Wire Wire Line
+	5100 7300 5050 7300
+Text Label 5650 6850 0    50   ~ 0
+VGND
+Wire Wire Line
+	5650 6850 5500 6850
+Connection ~ 5500 6850
+Wire Wire Line
+	5500 6850 5500 7300
+$Comp
+L madEEGamp-rescue:+5V-power-EEGamp-rescue #PWR0101
+U 1 1 5C893E64
+P 5050 6250
+F 0 "#PWR0101" H 5050 6100 50  0001 C CNN
+F 1 "+5V" H 5065 6423 50  0000 C CNN
+F 2 "" H 5050 6250 50  0001 C CNN
+F 3 "" H 5050 6250 50  0001 C CNN
+	1    5050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0102
+U 1 1 5C8D8385
+P 5050 7450
+F 0 "#PWR0102" H 5050 7200 50  0001 C CNN
+F 1 "GNDA" H 5000 7300 50  0000 C CNN
+F 2 "" H 5050 7450 50  0001 C CNN
+F 3 "" H 5050 7450 50  0001 C CNN
+	1    5050 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 7450 5050 7300
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C11
+U 1 1 5C8E4FC7
+P 5450 1850
+F 0 "C11" V 5198 1850 50  0000 C CNN
+F 1 "100nF" V 5289 1850 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 5488 1700 50  0001 C CNN
+F 3 "~" H 5450 1850 50  0001 C CNN
+	1    5450 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:+5V-power-EEGamp-rescue #PWR0103
+U 1 1 5C915337
+P 5300 1650
+F 0 "#PWR0103" H 5300 1500 50  0001 C CNN
+F 1 "+5V" V 5315 1778 50  0000 L CNN
+F 2 "" H 5300 1650 50  0001 C CNN
+F 3 "" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	1    0    0    -1  
+$EndComp
+Text Label 5900 1850 0    50   ~ 0
+VGND
+Wire Wire Line
+	5300 1650 5300 1850
+Connection ~ 5300 1850
+Wire Wire Line
+	5300 1850 5300 2100
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C13
+U 1 1 5C96A841
+P 6250 2900
+F 0 "C13" V 5998 2900 50  0000 C CNN
+F 1 "100nF" V 6089 2900 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 6288 2750 50  0001 C CNN
+F 3 "~" H 6250 2900 50  0001 C CNN
+	1    6250 2900
+	0    -1   -1   0   
+$EndComp
+Text Label 6500 2900 0    50   ~ 0
+VGND
+Wire Wire Line
+	6400 2900 6500 2900
+Wire Wire Line
+	5300 2700 5300 2900
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0104
+U 1 1 5C99C05A
+P 6000 3050
+F 0 "#PWR0104" H 6000 2800 50  0001 C CNN
+F 1 "GNDA" H 6005 2877 50  0000 C CNN
+F 2 "" H 6000 3050 50  0001 C CNN
+F 3 "" H 6000 3050 50  0001 C CNN
+	1    6000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2900 6000 2900
+Wire Wire Line
+	6000 2900 6000 3050
+Connection ~ 6000 2900
+Wire Wire Line
+	6000 2900 6100 2900
+Wire Wire Line
+	5600 1850 5650 1850
+Wire Wire Line
+	5500 2700 6100 2700
+Wire Wire Line
+	6100 2700 6100 2000
+Wire Wire Line
+	5650 2000 5650 1850
+Wire Wire Line
+	5650 2000 6100 2000
+Connection ~ 5650 1850
+Wire Wire Line
+	5650 1850 5900 1850
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C15
+U 1 1 5C9FD2CD
+P 6550 2400
+F 0 "C15" V 6298 2400 50  0000 C CNN
+F 1 "1μF" V 6389 2400 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 6588 2250 50  0001 C CNN
+F 3 "~" H 6550 2400 50  0001 C CNN
+	1    6550 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2400 7000 2400
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R24
+U 1 1 5CA18604
+P 8450 3000
+F 0 "R24" V 8245 3000 50  0000 C CNN
+F 1 "100k" V 8336 3000 50  0000 C CNN
+F 2 "Resistors:R_0603" V 8490 2990 50  0001 C CNN
+F 3 "~" H 8450 3000 50  0001 C CNN
+	1    8450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C17
+U 1 1 5CA1F3DA
+P 8450 3250
+F 0 "C17" V 8200 3250 50  0000 C CNN
+F 1 "1nF" V 8300 3250 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 8488 3100 50  0001 C CNN
+F 3 "~" H 8450 3250 50  0001 C CNN
+	1    8450 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R20
+U 1 1 5CA2D1F4
+P 7000 2650
+F 0 "R20" H 7068 2696 50  0000 L CNN
+F 1 "1M" H 7068 2605 50  0000 L CNN
+F 2 "Resistors:R_0603" V 7040 2640 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:R_POT_US-Device-EEGamp-rescue RV2
+U 1 1 5CA3ACBF
+P 7300 3000
+F 0 "RV2" V 7188 3000 50  0000 C CNN
+F 1 "20k" V 7097 3000 50  0000 C CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 7300 3000 50  0001 C CNN
+F 3 "~" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R22
+U 1 1 5CA3AE81
+P 7700 3000
+F 0 "R22" V 7900 3000 50  0000 C CNN
+F 1 "1k" V 7800 3000 50  0000 C CNN
+F 2 "Resistors:R_0603" V 7740 2990 50  0001 C CNN
+F 3 "~" H 7700 3000 50  0001 C CNN
+	1    7700 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2400 7000 2500
+Connection ~ 7000 2400
+Wire Wire Line
+	7000 2400 8150 2400
+Wire Wire Line
+	7000 2800 7300 2800
+Wire Wire Line
+	7300 2800 7300 2850
+Wire Wire Line
+	7000 2800 7000 3000
+Wire Wire Line
+	7000 3000 7150 3000
+Connection ~ 7000 2800
+Wire Wire Line
+	7450 3000 7550 3000
+Wire Wire Line
+	8150 2600 7950 2600
+Wire Wire Line
+	7950 2600 7950 3000
+Wire Wire Line
+	7950 3250 8300 3250
+Wire Wire Line
+	7850 3000 7950 3000
+Connection ~ 7950 3000
+Wire Wire Line
+	7950 3000 7950 3250
+Wire Wire Line
+	7950 3000 8300 3000
+Wire Wire Line
+	8600 3000 8950 3000
+Wire Wire Line
+	8950 3000 8950 3250
+Wire Wire Line
+	8950 3250 8600 3250
+Wire Wire Line
+	8950 3000 8950 2500
+Wire Wire Line
+	8950 2500 8750 2500
+Connection ~ 8950 3000
+Wire Wire Line
+	5800 2400 6300 2400
+Wire Wire Line
+	6300 1750 6300 2400
+Connection ~ 6300 2400
+Wire Wire Line
+	6300 2400 6400 2400
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C19
+U 1 1 5CAB53B6
+P 9450 2400
+F 0 "C19" V 9198 2400 50  0000 C CNN
+F 1 "1μF" V 9289 2400 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 9488 2250 50  0001 C CNN
+F 3 "~" H 9450 2400 50  0001 C CNN
+	1    9450 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R28
+U 1 1 5CAB5572
+P 9950 2400
+F 0 "R28" V 9745 2400 50  0000 C CNN
+F 1 "10k" V 9836 2400 50  0000 C CNN
+F 2 "Resistors:R_0603" V 9990 2390 50  0001 C CNN
+F 3 "~" H 9950 2400 50  0001 C CNN
+	1    9950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R34
+U 1 1 5CAB56BD
+P 10450 2400
+F 0 "R34" V 10245 2400 50  0000 C CNN
+F 1 "15k" V 10336 2400 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10490 2390 50  0001 C CNN
+F 3 "~" H 10450 2400 50  0001 C CNN
+	1    10450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 2400 9300 2400
+Wire Wire Line
+	8950 2400 8950 2500
+Connection ~ 8950 2500
+Wire Wire Line
+	9600 2400 9700 2400
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R26
+U 1 1 5CAE04A6
+P 9700 2750
+F 0 "R26" H 9768 2796 50  0000 L CNN
+F 1 "1M" H 9768 2705 50  0000 L CNN
+F 2 "Resistors:R_0603" V 9740 2740 50  0001 C CNN
+F 3 "~" H 9700 2750 50  0001 C CNN
+	1    9700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R30
+U 1 1 5CAE05B7
+P 10150 3100
+F 0 "R30" V 10350 3100 50  0000 C CNN
+F 1 "8.2k" V 10250 3100 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10190 3090 50  0001 C CNN
+F 3 "~" H 10150 3100 50  0001 C CNN
+	1    10150 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C21
+U 1 1 5CAE0D73
+P 10600 2650
+F 0 "C21" H 10450 2750 50  0000 L CNN
+F 1 "220nF 5%" H 10200 2550 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 10638 2500 50  0001 C CNN
+F 3 "~" H 10600 2650 50  0001 C CNN
+	1    10600 2650
+	1    0    0    -1  
+$EndComp
+Text Label 10600 2850 3    50   ~ 0
+VGND
+Wire Wire Line
+	10600 2850 10600 2800
+Wire Wire Line
+	9700 2400 9700 2600
+Connection ~ 9700 2400
+Wire Wire Line
+	9700 2400 9800 2400
+Wire Wire Line
+	9700 2900 9700 3100
+Wire Wire Line
+	9700 3100 10000 3100
+Wire Wire Line
+	10300 3100 10800 3100
+Wire Wire Line
+	10800 3100 10800 2600
+Text Label 12600 2500 0    50   ~ 0
+ADIN1
+Wire Wire Line
+	11400 2500 11500 2500
+Connection ~ 11500 2500
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R38
+U 1 1 5CB3D376
+P 11150 3100
+F 0 "R38" V 10945 3100 50  0000 C CNN
+F 1 "100k" V 11036 3100 50  0000 C CNN
+F 2 "Resistors:R_0603" V 11190 3090 50  0001 C CNN
+F 3 "~" H 11150 3100 50  0001 C CNN
+	1    11150 3100
+	0    1    1    0   
+$EndComp
+Text Label 7000 3200 3    50   ~ 0
+VGND
+Text Label 9700 3200 3    50   ~ 0
+VGND
+Wire Wire Line
+	9700 3200 9700 3100
+Connection ~ 9700 3100
+Wire Wire Line
+	7000 3200 7000 3000
+Connection ~ 7000 3000
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C25
+U 1 1 5CB5AA1D
+P 11150 3350
+F 0 "C25" V 11400 3350 50  0000 C CNN
+F 1 "1nF" V 11300 3350 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11188 3200 50  0001 C CNN
+F 3 "~" H 11150 3350 50  0001 C CNN
+	1    11150 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10800 3100 11000 3100
+Connection ~ 10800 3100
+Wire Wire Line
+	11000 3350 10800 3350
+Wire Wire Line
+	10800 3350 10800 3100
+Wire Wire Line
+	11300 3100 11500 3100
+Wire Wire Line
+	11500 3100 11500 2500
+Wire Wire Line
+	11300 3350 11500 3350
+Wire Wire Line
+	11500 3350 11500 3100
+Connection ~ 11500 3100
+Wire Wire Line
+	11500 2500 12600 2500
+$Comp
+L madEEGamp-rescue:+5V-power-EEGamp-rescue #PWR0105
+U 1 1 5CBC8DAE
+P 11950 2800
+F 0 "#PWR0105" H 11950 2650 50  0001 C CNN
+F 1 "+5V" H 11965 2973 50  0000 C CNN
+F 2 "" H 11950 2800 50  0001 C CNN
+F 3 "" H 11950 2800 50  0001 C CNN
+	1    11950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0106
+U 1 1 5CBD369D
+P 12150 3500
+F 0 "#PWR0106" H 12150 3250 50  0001 C CNN
+F 1 "GNDA" H 12155 3327 50  0000 C CNN
+F 2 "" H 12150 3500 50  0001 C CNN
+F 3 "" H 12150 3500 50  0001 C CNN
+	1    12150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C32
+U 1 1 5CBDDC2D
+P 12500 3100
+F 0 "C32" H 12500 3200 50  0000 L CNN
+F 1 "100nF" H 12500 3000 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12538 2950 50  0001 C CNN
+F 3 "~" H 12500 3100 50  0001 C CNN
+	1    12500 3100
+	1    0    0    -1  
+$EndComp
+Text Label 12900 3150 3    50   ~ 0
+VGND
+Wire Wire Line
+	11950 2800 11950 2850
+Wire Wire Line
+	11950 2850 12150 2850
+Wire Wire Line
+	12150 2850 12150 2900
+Wire Wire Line
+	11950 3500 12150 3500
+Wire Wire Line
+	12150 3500 12150 3200
+Connection ~ 12150 3500
+Wire Wire Line
+	12500 3500 12500 3250
+Wire Wire Line
+	12500 2950 12500 2850
+Wire Wire Line
+	12900 2850 12900 3150
+Wire Wire Line
+	12500 2850 12900 2850
+Text Label 5900 4600 0    50   ~ 0
+VGND
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C14
+U 1 1 5CC8A53B
+P 6250 5650
+F 0 "C14" V 5998 5650 50  0000 C CNN
+F 1 "100nF" V 6089 5650 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 6288 5500 50  0001 C CNN
+F 3 "~" H 6250 5650 50  0001 C CNN
+	1    6250 5650
+	0    -1   -1   0   
+$EndComp
+Text Label 6500 5650 0    50   ~ 0
+VGND
+Wire Wire Line
+	6400 5650 6500 5650
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0107
+U 1 1 5CC8A543
+P 6000 5800
+F 0 "#PWR0107" H 6000 5550 50  0001 C CNN
+F 1 "GNDA" H 6005 5627 50  0000 C CNN
+F 2 "" H 6000 5800 50  0001 C CNN
+F 3 "" H 6000 5800 50  0001 C CNN
+	1    6000 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5650 6000 5650
+Wire Wire Line
+	6000 5650 6000 5800
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6100 5650
+Wire Wire Line
+	5500 5450 6100 5450
+Wire Wire Line
+	6100 5450 6100 4750
+Wire Wire Line
+	5650 4750 6100 4750
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C16
+U 1 1 5CC8A551
+P 6550 5150
+F 0 "C16" V 6298 5150 50  0000 C CNN
+F 1 "1μF" V 6389 5150 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 6588 5000 50  0001 C CNN
+F 3 "~" H 6550 5150 50  0001 C CNN
+	1    6550 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 5150 7000 5150
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R25
+U 1 1 5CC8A55E
+P 8450 5750
+F 0 "R25" V 8245 5750 50  0000 C CNN
+F 1 "100k" V 8336 5750 50  0000 C CNN
+F 2 "Resistors:R_0603" V 8490 5740 50  0001 C CNN
+F 3 "~" H 8450 5750 50  0001 C CNN
+	1    8450 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C18
+U 1 1 5CC8A564
+P 8450 6000
+F 0 "C18" V 8200 6000 50  0000 C CNN
+F 1 "1nF" V 8300 6000 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 8488 5850 50  0001 C CNN
+F 3 "~" H 8450 6000 50  0001 C CNN
+	1    8450 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R21
+U 1 1 5CC8A56A
+P 7000 5400
+F 0 "R21" H 7068 5446 50  0000 L CNN
+F 1 "1M" H 7068 5355 50  0000 L CNN
+F 2 "Resistors:R_0603" V 7040 5390 50  0001 C CNN
+F 3 "~" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:R_POT_US-Device-EEGamp-rescue RV3
+U 1 1 5CC8A570
+P 7300 5750
+F 0 "RV3" V 7188 5750 50  0000 C CNN
+F 1 "20k" V 7097 5750 50  0000 C CNN
+F 2 "Resistors:BOURNS_3296W_Vertical" H 7300 5750 50  0001 C CNN
+F 3 "~" H 7300 5750 50  0001 C CNN
+	1    7300 5750
+	0    1    -1   0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R23
+U 1 1 5CC8A576
+P 7700 5750
+F 0 "R23" V 7900 5750 50  0000 C CNN
+F 1 "1k" V 7800 5750 50  0000 C CNN
+F 2 "Resistors:R_0603" V 7740 5740 50  0001 C CNN
+F 3 "~" H 7700 5750 50  0001 C CNN
+	1    7700 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 5150 7000 5250
+Connection ~ 7000 5150
+Wire Wire Line
+	7000 5150 8150 5150
+Wire Wire Line
+	7000 5550 7300 5550
+Wire Wire Line
+	7300 5550 7300 5600
+Wire Wire Line
+	7000 5550 7000 5750
+Wire Wire Line
+	7000 5750 7150 5750
+Connection ~ 7000 5550
+Wire Wire Line
+	7450 5750 7550 5750
+Wire Wire Line
+	8150 5350 7950 5350
+Wire Wire Line
+	7950 5350 7950 5750
+Wire Wire Line
+	7950 6000 8300 6000
+Wire Wire Line
+	7850 5750 7950 5750
+Connection ~ 7950 5750
+Wire Wire Line
+	7950 5750 7950 6000
+Wire Wire Line
+	7950 5750 8300 5750
+Wire Wire Line
+	8600 5750 8950 5750
+Wire Wire Line
+	8950 5750 8950 6000
+Wire Wire Line
+	8950 6000 8600 6000
+Wire Wire Line
+	8950 5750 8950 5250
+Wire Wire Line
+	8950 5250 8750 5250
+Connection ~ 8950 5750
+Wire Wire Line
+	5800 5150 6300 5150
+Wire Wire Line
+	6300 4500 6300 5150
+Connection ~ 6300 5150
+Wire Wire Line
+	6300 5150 6400 5150
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C20
+U 1 1 5CC8A597
+P 9450 5150
+F 0 "C20" V 9198 5150 50  0000 C CNN
+F 1 "1μF" V 9289 5150 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 9488 5000 50  0001 C CNN
+F 3 "~" H 9450 5150 50  0001 C CNN
+	1    9450 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R29
+U 1 1 5CC8A59D
+P 9950 5150
+F 0 "R29" V 9745 5150 50  0000 C CNN
+F 1 "10k" V 9836 5150 50  0000 C CNN
+F 2 "Resistors:R_0603" V 9990 5140 50  0001 C CNN
+F 3 "~" H 9950 5150 50  0001 C CNN
+	1    9950 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R35
+U 1 1 5CC8A5A3
+P 10450 5150
+F 0 "R35" V 10245 5150 50  0000 C CNN
+F 1 "15k" V 10336 5150 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10490 5140 50  0001 C CNN
+F 3 "~" H 10450 5150 50  0001 C CNN
+	1    10450 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 5150 9300 5150
+Wire Wire Line
+	8950 5150 8950 5250
+Connection ~ 8950 5250
+Wire Wire Line
+	9600 5150 9700 5150
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R27
+U 1 1 5CC8A5B5
+P 9700 5500
+F 0 "R27" H 9768 5546 50  0000 L CNN
+F 1 "1M" H 9768 5455 50  0000 L CNN
+F 2 "Resistors:R_0603" V 9740 5490 50  0001 C CNN
+F 3 "~" H 9700 5500 50  0001 C CNN
+	1    9700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R31
+U 1 1 5CC8A5BB
+P 10150 5850
+F 0 "R31" V 10350 5850 50  0000 C CNN
+F 1 "8.2k" V 10250 5850 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10190 5840 50  0001 C CNN
+F 3 "~" H 10150 5850 50  0001 C CNN
+	1    10150 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C22
+U 1 1 5CC8A5C1
+P 10600 5400
+F 0 "C22" H 10450 5500 50  0000 L CNN
+F 1 "220nF 5%" H 10200 5300 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 10638 5250 50  0001 C CNN
+F 3 "~" H 10600 5400 50  0001 C CNN
+	1    10600 5400
+	1    0    0    -1  
+$EndComp
+Text Label 10600 5600 3    50   ~ 0
+VGND
+Wire Wire Line
+	10600 5600 10600 5550
+Wire Wire Line
+	9700 5150 9700 5350
+Connection ~ 9700 5150
+Wire Wire Line
+	9700 5150 9800 5150
+Wire Wire Line
+	9700 5650 9700 5850
+Wire Wire Line
+	9700 5850 10000 5850
+Wire Wire Line
+	10300 5850 10800 5850
+Wire Wire Line
+	10800 5850 10800 5350
+Text Label 12600 5250 0    50   ~ 0
+ADIN0
+Wire Wire Line
+	11400 5250 11500 5250
+Connection ~ 11500 5250
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C24
+U 1 1 5CC8A5D7
+P 11100 4800
+F 0 "C24" V 10848 4800 50  0000 C CNN
+F 1 "33nF 5%" V 10939 4800 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11138 4650 50  0001 C CNN
+F 3 "~" H 11100 4800 50  0001 C CNN
+	1    11100 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11250 4800 11500 4800
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R39
+U 1 1 5CC8A5DF
+P 11150 5850
+F 0 "R39" V 10945 5850 50  0000 C CNN
+F 1 "100k" V 11036 5850 50  0000 C CNN
+F 2 "Resistors:R_0603" V 11190 5840 50  0001 C CNN
+F 3 "~" H 11150 5850 50  0001 C CNN
+	1    11150 5850
+	0    1    1    0   
+$EndComp
+Text Label 7000 5950 3    50   ~ 0
+VGND
+Text Label 9700 5950 3    50   ~ 0
+VGND
+Wire Wire Line
+	9700 5950 9700 5850
+Connection ~ 9700 5850
+Wire Wire Line
+	7000 5950 7000 5750
+Connection ~ 7000 5750
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C26
+U 1 1 5CC8A5EB
+P 11150 6100
+F 0 "C26" V 11400 6100 50  0000 C CNN
+F 1 "1nF" V 11300 6100 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11188 5950 50  0001 C CNN
+F 3 "~" H 11150 6100 50  0001 C CNN
+	1    11150 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10800 5850 11000 5850
+Connection ~ 10800 5850
+Wire Wire Line
+	11000 6100 10800 6100
+Wire Wire Line
+	10800 6100 10800 5850
+Wire Wire Line
+	11300 5850 11500 5850
+Wire Wire Line
+	11500 5850 11500 5250
+Wire Wire Line
+	11300 6100 11500 6100
+Wire Wire Line
+	11500 6100 11500 5850
+Connection ~ 11500 5850
+Wire Wire Line
+	11500 5250 12600 5250
+$Comp
+L madEEGamp-rescue:+5V-power-EEGamp-rescue #PWR0108
+U 1 1 5CC8A5FB
+P 11950 5600
+F 0 "#PWR0108" H 11950 5450 50  0001 C CNN
+F 1 "+5V" H 11965 5773 50  0000 C CNN
+F 2 "" H 11950 5600 50  0001 C CNN
+F 3 "" H 11950 5600 50  0001 C CNN
+	1    11950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0109
+U 1 1 5CC8A603
+P 12150 6300
+F 0 "#PWR0109" H 12150 6050 50  0001 C CNN
+F 1 "GNDA" H 12155 6127 50  0000 C CNN
+F 2 "" H 12150 6300 50  0001 C CNN
+F 3 "" H 12150 6300 50  0001 C CNN
+	1    12150 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C33
+U 1 1 5CC8A609
+P 12550 5900
+F 0 "C33" H 12550 6000 50  0000 L CNN
+F 1 "100nF" H 12550 5800 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12588 5750 50  0001 C CNN
+F 3 "~" H 12550 5900 50  0001 C CNN
+	1    12550 5900
+	1    0    0    -1  
+$EndComp
+Text Label 12950 5950 3    50   ~ 0
+VGND
+Wire Wire Line
+	11950 5600 11950 5650
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C31
+U 1 1 5CC8A612
+P 12150 5850
+F 0 "C31" H 12150 5950 50  0000 L CNN
+F 1 "100nF" H 12150 5750 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12188 5700 50  0001 C CNN
+F 3 "~" H 12150 5850 50  0001 C CNN
+	1    12150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 5650 12150 5650
+Wire Wire Line
+	12150 5650 12150 5700
+Wire Wire Line
+	11950 6300 12150 6300
+Wire Wire Line
+	12150 6300 12150 6000
+Connection ~ 12150 6300
+Wire Wire Line
+	12550 6300 12550 6050
+Wire Wire Line
+	12550 5750 12550 5650
+Wire Wire Line
+	12950 5650 12950 5950
+Wire Wire Line
+	12550 5650 12950 5650
+Wire Wire Line
+	5300 5650 5300 5450
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C12
+U 1 1 5CCB07A4
+P 5450 4600
+F 0 "C12" V 5198 4600 50  0000 C CNN
+F 1 "100nF" V 5289 4600 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 5488 4450 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 4400 5300 4600
+Connection ~ 5300 4600
+Wire Wire Line
+	5300 4600 5300 4850
+Wire Wire Line
+	5600 4600 5650 4600
+Wire Wire Line
+	5650 4750 5650 4600
+Connection ~ 5650 4600
+Wire Wire Line
+	5650 4600 5900 4600
+$Comp
+L madEEGamp-rescue:+5V-power-EEGamp-rescue #PWR0110
+U 1 1 5CCD7EB4
+P 5300 4400
+F 0 "#PWR0110" H 5300 4250 50  0001 C CNN
+F 1 "+5V" H 5315 4573 50  0000 C CNN
+F 2 "" H 5300 4400 50  0001 C CNN
+F 3 "" H 5300 4400 50  0001 C CNN
+	1    5300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP4
+U 1 1 5CCDC2E9
+P 15150 7800
+F 0 "JP4" H 15400 7800 50  0000 C CNN
+F 1 "SJ201" H 15150 7914 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 7800 50  0001 C CNN
+F 3 "~" H 15150 7800 50  0001 C CNN
+	1    15150 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP5
+U 1 1 5CCDD07A
+P 15150 7900
+F 0 "JP5" H 15400 7900 50  0000 C CNN
+F 1 "SJ202" H 15150 8014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 7900 50  0001 C CNN
+F 3 "~" H 15150 7900 50  0001 C CNN
+	1    15150 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP6
+U 1 1 5CCDD142
+P 15150 8000
+F 0 "JP6" H 15400 8000 50  0000 C CNN
+F 1 "SJ203" H 15150 8114 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15150 8000 50  0001 C CNN
+F 3 "~" H 15150 8000 50  0001 C CNN
+	1    15150 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14900 7800 15000 7800
+Wire Wire Line
+	14900 7900 15000 7900
+Wire Wire Line
+	14900 8000 15000 8000
+Wire Wire Line
+	15300 8000 15300 7900
+Wire Wire Line
+	15300 7900 15300 7800
+Connection ~ 15300 7900
+Text Label 15300 7600 1    50   ~ 0
+ADIN0
+Wire Wire Line
+	15300 7800 15300 7600
+Connection ~ 15300 7800
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP1
+U 1 1 5CDF7464
+P 15550 8100
+F 0 "JP1" H 15800 8100 50  0000 C CNN
+F 1 "SJ201" H 15550 8214 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8100 50  0001 C CNN
+F 3 "~" H 15550 8100 50  0001 C CNN
+	1    15550 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP2
+U 1 1 5CDF746B
+P 15550 8200
+F 0 "JP2" H 15800 8200 50  0000 C CNN
+F 1 "SJ202" H 15550 8314 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8200 50  0001 C CNN
+F 3 "~" H 15550 8200 50  0001 C CNN
+	1    15550 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:SolderJumper_2_Open-Jumper-EEGamp-rescue JP3
+U 1 1 5CDF7472
+P 15550 8300
+F 0 "JP3" H 15800 8300 50  0000 C CNN
+F 1 "SJ203" H 15550 8414 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 15550 8300 50  0001 C CNN
+F 3 "~" H 15550 8300 50  0001 C CNN
+	1    15550 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15700 8300 15700 8200
+Wire Wire Line
+	15700 8200 15700 8100
+Connection ~ 15700 8200
+Text Label 15700 7600 1    50   ~ 0
+ADIN1
+Wire Wire Line
+	14200 7900 14100 7900
+Wire Wire Line
+	14100 7900 14100 8000
+Wire Wire Line
+	14100 8000 14200 8000
+Wire Wire Line
+	14100 8000 14100 8100
+Wire Wire Line
+	14100 8100 14200 8100
+Connection ~ 14100 8000
+Wire Wire Line
+	14100 8100 14100 8200
+Wire Wire Line
+	14100 8200 14200 8200
+Connection ~ 14100 8100
+Wire Wire Line
+	14100 8200 14100 8300
+Wire Wire Line
+	14100 8300 14200 8300
+Connection ~ 14100 8200
+Wire Wire Line
+	15700 7600 15700 8100
+Connection ~ 15700 8100
+Text Label 14000 8300 2    50   ~ 0
+GNDA
+Connection ~ 14100 8300
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C27
+U 1 1 5CF97831
+P 11800 7050
+F 0 "C27" V 11548 7050 50  0000 C CNN
+F 1 "100nF" V 11639 7050 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11838 6900 50  0001 C CNN
+F 3 "~" H 11800 7050 50  0001 C CNN
+	1    11800 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11650 7050 11600 7050
+Wire Wire Line
+	11600 7450 11650 7450
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C28
+U 1 1 5CFDD237
+P 11800 7850
+F 0 "C28" V 12050 7850 50  0000 C CNN
+F 1 "100nF" V 11950 7850 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11838 7700 50  0001 C CNN
+F 3 "~" H 11800 7850 50  0001 C CNN
+	1    11800 7850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 7850 12050 7850
+Wire Wire Line
+	11650 7850 11600 7850
+Wire Wire Line
+	11600 7850 11600 7750
+$Comp
+L madEEGamp-rescue:CP-Device-EEGamp-rescue C29
+U 1 1 5D00C932
+P 11800 8300
+F 0 "C29" V 12050 8300 50  0000 C CNN
+F 1 "47μF tan 1ohm" V 11950 8200 50  0000 C CNN
+F 2 "Capacitors_Tantalum:CP_EIA-3528-15_AVX-H" H 11838 8150 50  0001 C CNN
+F 3 "~" H 11800 8300 50  0001 C CNN
+	1    11800 8300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11600 7850 11600 8300
+Wire Wire Line
+	11600 8300 11650 8300
+Connection ~ 11600 7850
+Wire Wire Line
+	12050 7850 12050 8300
+Wire Wire Line
+	12050 8300 11950 8300
+Connection ~ 12050 7850
+Wire Wire Line
+	11600 8300 11600 8650
+Connection ~ 11600 8300
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C34
+U 1 1 5D06DE3C
+P 12450 7500
+F 0 "C34" H 12565 7546 50  0000 L CNN
+F 1 "10nF" H 12565 7455 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12488 7350 50  0001 C CNN
+F 3 "~" H 12450 7500 50  0001 C CNN
+	1    12450 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 12450 7350
+Wire Wire Line
+	12450 7350 12250 7350
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C35
+U 1 1 5D06DFBB
+P 12800 7950
+F 0 "C35" H 12915 7996 50  0000 L CNN
+F 1 "10nF" H 12915 7905 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12838 7800 50  0001 C CNN
+F 3 "~" H 12800 7950 50  0001 C CNN
+	1    12800 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:CP-Device-EEGamp-rescue C36
+U 1 1 5D06E15A
+P 13300 7950
+F 0 "C36" H 13418 7996 50  0000 L CNN
+F 1 "47μF" H 13418 7905 50  0000 L CNN
+F 2 "Capacitors_Tantalum:CP_EIA-3528-15_AVX-H" H 13338 7800 50  0001 C CNN
+F 3 "~" H 13300 7950 50  0001 C CNN
+	1    13300 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 7850 12400 7850
+Wire Wire Line
+	14200 7550 14200 7700
+$Comp
+L madEEGamp-rescue:GNDA-power-EEGamp-rescue #PWR0111
+U 1 1 5D157363
+P 12150 7950
+F 0 "#PWR0111" H 12150 7700 50  0001 C CNN
+F 1 "GNDA" H 12155 7777 50  0000 C CNN
+F 2 "" H 12150 7950 50  0001 C CNN
+F 3 "" H 12150 7950 50  0001 C CNN
+	1    12150 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 8650 12300 8650
+Wire Wire Line
+	12300 7550 12250 7550
+Wire Wire Line
+	12150 7950 12150 7850
+Connection ~ 12150 7850
+Wire Wire Line
+	12150 7850 12050 7850
+Wire Wire Line
+	11600 7750 11350 7750
+Text Label 10550 7600 1    50   ~ 0
+VGND
+Wire Wire Line
+	11350 7750 10550 7750
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R32
+U 1 1 5D249354
+P 10400 8000
+F 0 "R32" V 10195 8000 50  0000 C CNN
+F 1 "10k" V 10286 8000 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10440 7990 50  0001 C CNN
+F 3 "~" H 10400 8000 50  0001 C CNN
+	1    10400 8000
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R33
+U 1 1 5D2495F5
+P 10400 8500
+F 0 "R33" V 10600 8500 50  0000 C CNN
+F 1 "10k" V 10500 8500 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10440 8490 50  0001 C CNN
+F 3 "~" H 10400 8500 50  0001 C CNN
+	1    10400 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R36
+U 1 1 5D29BC2B
+P 10550 8250
+F 0 "R36" H 10618 8296 50  0000 L CNN
+F 1 "100" H 10618 8205 50  0000 L CNN
+F 2 "Resistors:R_0603" V 10590 8240 50  0001 C CNN
+F 3 "~" H 10550 8250 50  0001 C CNN
+	1    10550 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 8000 10550 8100
+Wire Wire Line
+	10550 8400 10550 8500
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R37
+U 1 1 5D2EF7AA
+P 10850 8500
+F 0 "R37" V 11050 8500 50  0000 C CNN
+F 1 "1M" V 10950 8500 50  0000 C CNN
+F 2 "Resistors:R_0603" V 10890 8490 50  0001 C CNN
+F 3 "~" H 10850 8500 50  0001 C CNN
+	1    10850 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L madEEGamp-rescue:R_US-Device-EEGamp-rescue R40
+U 1 1 5D2EF99D
+P 11250 8500
+F 0 "R40" V 11450 8500 50  0000 C CNN
+F 1 "1M" V 11350 8500 50  0000 C CNN
+F 2 "Resistors:R_0603" V 11290 8490 50  0001 C CNN
+F 3 "~" H 11250 8500 50  0001 C CNN
+	1    11250 8500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 8000 10250 8000
+Wire Wire Line
+	9750 8500 10250 8500
+Wire Wire Line
+	11000 8500 11100 8500
+Wire Wire Line
+	10550 8000 10550 7750
+Connection ~ 10550 8000
+Connection ~ 10550 7750
+Wire Wire Line
+	10550 8500 10700 8500
+Connection ~ 10550 8500
+Wire Wire Line
+	10550 7600 10550 7750
+Wire Wire Line
+	11400 8500 11400 9650
+Text Label 14950 9100 0    50   ~ 0
+PWM
+Wire Wire Line
+	15200 9100 15200 9650
+Wire Wire Line
+	10600 2400 10600 2500
+Connection ~ 10600 2400
+Wire Wire Line
+	10600 2400 10800 2400
+Wire Wire Line
+	12150 3500 12500 3500
+Wire Wire Line
+	10600 5250 10600 5150
+Connection ~ 10600 5150
+Wire Wire Line
+	10600 5150 10800 5150
+Wire Wire Line
+	10200 4800 10950 4800
+Wire Wire Line
+	12150 6300 12550 6300
+Wire Wire Line
+	5050 6400 5050 6550
+Connection ~ 5050 6400
+Wire Wire Line
+	5050 7150 5050 7300
+Connection ~ 5050 7300
+Wire Wire Line
+	11950 5650 11950 5700
+Connection ~ 11950 5650
+Wire Wire Line
+	11950 2900 11950 2850
+Connection ~ 11950 2850
+$Comp
+L Transistor_NPN:BC847 Q1
+U 1 1 5E176942
+P 2900 2100
+F 0 "Q1" H 2800 1950 50  0000 L CNN
+F 1 "BC847" H 2650 2250 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3100 2025 50  0001 L CIN
+F 3 "" H 2900 2100 50  0001 L CNN
+	1    2900 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 1900
+$Comp
+L Transistor_NPN:BC847 Q2
+U 1 1 5E177FCB
+P 2900 2700
+F 0 "Q2" H 2800 2850 50  0000 L CNN
+F 1 "BC847" H 2650 2550 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3100 2625 50  0001 L CIN
+F 3 "" H 2900 2700 50  0001 L CNN
+	1    2900 2700
+	1    0    0    1   
+$EndComp
+Connection ~ 3000 2900
+$Comp
+L Transistor_NPN:BC847 Q3
+U 1 1 5E17A15E
+P 2900 4850
+F 0 "Q3" H 2800 4700 50  0000 L CNN
+F 1 "BC847" H 2650 5000 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3100 4775 50  0001 L CIN
+F 3 "" H 2900 4850 50  0001 L CNN
+	1    2900 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 4650
+$Comp
+L Transistor_NPN:BC847 Q4
+U 1 1 5E17AD1D
+P 2900 5450
+F 0 "Q4" H 2800 5600 50  0000 L CNN
+F 1 "BC847" H 2650 5300 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3100 5375 50  0001 L CIN
+F 3 "" H 2900 5450 50  0001 L CNN
+	1    2900 5450
+	1    0    0    1   
+$EndComp
+Connection ~ 3000 5650
+$Comp
+L Transistor_PNP:BC857 Q5
+U 1 1 5E1978B3
+P 3350 2100
+F 0 "Q5" H 3250 2250 50  0000 L CNN
+F 1 "BC857" H 3100 1950 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3550 2025 50  0001 L CIN
+F 3 "" H 3350 2100 50  0001 L CNN
+	1    3350 2100
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3250 1900
+$Comp
+L Transistor_PNP:BC857 Q6
+U 1 1 5E198185
+P 3350 2700
+F 0 "Q6" H 3250 2550 50  0000 L CNN
+F 1 "BC857" H 3100 2850 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3550 2625 50  0001 L CIN
+F 3 "" H 3350 2700 50  0001 L CNN
+	1    3350 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 2900
+$Comp
+L Transistor_PNP:BC857 Q7
+U 1 1 5E19B0AF
+P 3350 4850
+F 0 "Q7" H 3250 5000 50  0000 L CNN
+F 1 "BC857" H 3100 4700 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3550 4775 50  0001 L CIN
+F 3 "" H 3350 4850 50  0001 L CNN
+	1    3350 4850
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3250 4650
+$Comp
+L Transistor_PNP:BC857 Q8
+U 1 1 5E19BAA9
+P 3350 5450
+F 0 "Q8" H 3250 5300 50  0000 L CNN
+F 1 "BC857" H 3100 5600 50  0000 L CNN
+F 2 "Package_SOT:SOT-23" H 3550 5375 50  0001 L CIN
+F 3 "" H 3350 5450 50  0001 L CNN
+	1    3350 5450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3250 5650
+$Comp
+L Amplifier_Instrumentation:AD620 U3
+U 1 1 5E1E2FFA
+P 5400 5150
+F 0 "U3" H 5550 5300 50  0000 L CNN
+F 1 "AD620" H 5550 5000 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 5150 50  0001 C CNN
+F 3 "" H 5400 5150 50  0001 C CNN
+	1    5400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Instrumentation:AD620 U2
+U 1 1 5E1E748E
+P 5400 2400
+F 0 "U2" H 5550 2550 50  0000 L CNN
+F 1 "AD620" H 5550 2250 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5400 2400 50  0001 C CNN
+F 3 "" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2050 10950 2050
+$Comp
+L Amplifier_Operational:AD822 U5
+U 2 1 5E23EF7D
+P 11100 2500
+F 0 "U5" H 11100 2700 50  0000 C CNN
+F 1 "AD822" H 11100 2300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 2500 50  0001 C CNN
+F 3 "" H 11100 2500 50  0001 C CNN
+	2    11100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 2050 11500 2050
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C23
+U 1 1 5CB2A06F
+P 11100 2050
+F 0 "C23" V 10848 2050 50  0000 C CNN
+F 1 "33nF 5%" V 10939 2050 50  0000 C CNN
+F 2 "Capacitors:C_0603" H 11138 1900 50  0001 C CNN
+F 3 "~" H 11100 2050 50  0001 C CNN
+	1    11100 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U5
+U 1 1 5E23E34C
+P 8450 2500
+F 0 "U5" H 8450 2867 50  0000 C CNN
+F 1 "AD822" H 8450 2776 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 2500 50  0001 C CNN
+F 3 "" H 8450 2500 50  0001 C CNN
+	1    8450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 2400 10200 2400
+Wire Wire Line
+	10200 2050 10200 2400
+Connection ~ 10200 2400
+Wire Wire Line
+	10200 2400 10300 2400
+Wire Wire Line
+	11500 2050 11500 2500
+$Comp
+L Amplifier_Operational:AD822 U5
+U 3 1 5E24A052
+P 12050 3200
+F 0 "U5" H 11750 3250 50  0000 L CNN
+F 1 "AD822" H 11650 3150 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 3200 50  0001 C CNN
+F 3 "" H 12050 3200 50  0001 C CNN
+	3    12050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L madEEGamp-rescue:C-Device-EEGamp-rescue C30
+U 1 1 5CBFD019
+P 12150 3050
+F 0 "C30" H 12150 3150 50  0000 L CNN
+F 1 "100nF" H 12150 2950 50  0000 L CNN
+F 2 "Capacitors:C_0603" H 12188 2900 50  0001 C CNN
+F 3 "~" H 12150 3050 50  0001 C CNN
+	1    12150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U6
+U 1 1 5E377076
+P 8450 5250
+F 0 "U6" H 8450 5617 50  0000 C CNN
+F 1 "AD822" H 8450 5526 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 5250 50  0001 C CNN
+F 3 "" H 8450 5250 50  0001 C CNN
+	1    8450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U6
+U 2 1 5E377B26
+P 11100 5250
+F 0 "U6" H 11100 5450 50  0000 C CNN
+F 1 "AD822" H 11100 5050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 5250 50  0001 C CNN
+F 3 "" H 11100 5250 50  0001 C CNN
+	2    11100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U6
+U 3 1 5E37B913
+P 12050 6000
+F 0 "U6" H 11750 6050 50  0000 L CNN
+F 1 "AD822" H 11650 5950 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12050 6000 50  0001 C CNN
+F 3 "" H 12050 6000 50  0001 C CNN
+	3    12050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5150 10200 5150
+Wire Wire Line
+	11500 4800 11500 5250
+Wire Wire Line
+	10200 4800 10200 5150
+Connection ~ 10200 5150
+Wire Wire Line
+	10200 5150 10300 5150
+$Comp
+L Amplifier_Operational:AD822 U1
+U 1 1 5E4242D9
+P 11950 7450
+F 0 "U1" H 12000 7600 50  0000 C CNN
+F 1 "AD822" H 12050 7300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 7450 50  0001 C CNN
+F 3 "" H 11950 7450 50  0001 C CNN
+	1    11950 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U4
+U 1 1 5E42D7F6
+P 3900 7150
+F 0 "U4" H 3900 7500 50  0000 C CNN
+F 1 "AD822" H 3900 7400 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3900 7150 50  0001 C CNN
+F 3 "" H 3900 7150 50  0001 C CNN
+	1    3900 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U4
+U 2 1 5E43100A
+P 5350 3700
+F 0 "U4" H 5350 4050 50  0000 C CNN
+F 1 "AD822" H 5350 3950 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	2    5350 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD822 U4
+U 3 1 5E434266
+P 5150 6850
+F 0 "U4" H 5108 6896 50  0000 L CNN
+F 1 "AD822" H 5108 6805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5150 6850 50  0001 C CNN
+F 3 "" H 5150 6850 50  0001 C CNN
+	3    5150 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 7750 11350 8000
+Connection ~ 11350 7750
+Connection ~ 11600 7750
+$Comp
+L Amplifier_Operational:AD822 U1
+U 3 1 5E4ABADB
+P 12150 7450
+F 0 "U1" H 12108 7496 50  0001 L CNN
+F 1 "AD822" H 12100 7400 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12150 7450 50  0001 C CNN
+F 3 "" H 12150 7450 50  0001 C CNN
+	3    12150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 7050 12050 7050
+Wire Wire Line
+	11600 7050 11600 7450
+Connection ~ 11600 7450
+Wire Wire Line
+	11600 7450 11600 7750
+Wire Wire Line
+	12050 7850 12050 7750
+Wire Wire Line
+	12300 7550 12300 8650
+Wire Wire Line
+	12450 7650 12450 7850
+$Comp
+L Amplifier_Operational:AD822 U1
+U 2 1 5E42BF08
+P 2900 7550
+F 0 "U1" H 2900 7250 50  0000 C CNN
+F 1 "AD822" H 2900 7350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2900 7550 50  0001 C CNN
+F 3 "" H 2900 7550 50  0001 C CNN
+	2    2900 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:A2541WV-2P X1
+U 1 1 5E68CF92
+P 1450 2450
+F 0 "X1" H 1800 2250 50  0000 C CNN
+F 1 "CH2" H 1800 2550 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 1800 2000 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 1650 2750 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1700 2200 50  0001 C CIN "Manufacturer"
+	1    1450 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:A2541WV-2P X2
+U 1 1 5E68F89F
+P 1450 5200
+F 0 "X2" H 1800 5000 50  0000 C CNN
+F 1 "CH1" H 1800 5300 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 1800 4750 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 1650 5500 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1700 4950 50  0001 C CIN "Manufacturer"
+	1    1450 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1700 1450 2350
+Wire Wire Line
+	1450 2450 1450 3100
+Wire Wire Line
+	1450 4450 1450 5100
+Wire Wire Line
+	1450 5200 1450 5850
+$Comp
+L Connector_Header:A2541WV-2P X4
+U 1 1 5E73DCC5
+P 9750 8300
+F 0 "X4" H 10100 8100 50  0000 C CNN
+F 1 "Cal" H 10100 8400 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 10100 7850 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 9950 8600 50  0001 C CNN
+F 4 "Changjiang Connectors" H 10000 8050 50  0001 C CIN "Manufacturer"
+	1    9750 8300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 8000 9750 8200
+Wire Wire Line
+	9750 8300 9750 8500
+$Comp
+L Connector_Header:C81276 X3
+U 1 1 5E7E5413
+P 1450 7550
+F 0 "X3" H 1800 7350 50  0000 C CNN
+F 1 "R_LEG" H 1750 7450 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 1800 7100 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 1650 7850 50  0001 C CNN
+F 4 "Changjiang Connectors" H 1750 7400 50  0001 C CIN "Manufacturer"
+	1    1450 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Header:C81276 X5
+U 1 1 5E7F47D1
+P 6300 1750
+F 0 "X5" V 6538 1672 50  0000 R CNN
+F 1 "DC Check CH1" V 6447 1672 50  0000 R CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 6650 1300 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 6500 2050 50  0001 C CNN
+F 4 "Changjiang Connectors" H 6600 1600 50  0001 C CIN "Manufacturer"
+	1    6300 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Header:C81276 X6
+U 1 1 5E7FEE29
+P 6300 4500
+F 0 "X6" V 6538 4422 50  0000 R CNN
+F 1 "DC Check CH2" V 6447 4422 50  0000 R CNN
+F 2 "Connector_Header:PinHeader_1x01_P2.54mm_Vertical" H 6650 4050 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-C81276_C81276.htmlConnectors-A2541WV-4P_C225479.html" H 6500 4800 50  0001 C CNN
+F 4 "Changjiang Connectors" H 6600 4350 50  0001 C CIN "Manufacturer"
+	1    6300 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12800 7550 13300 7550
+Wire Wire Line
+	12800 8300 12800 8100
+Wire Wire Line
+	12800 8300 13300 8300
+Wire Wire Line
+	13300 8100 13300 8300
+Connection ~ 13300 8300
+Wire Wire Line
+	13300 8300 14100 8300
+Wire Wire Line
+	12800 7800 12800 7550
+Wire Wire Line
+	13300 7800 13300 7550
+Connection ~ 13300 7550
+Wire Wire Line
+	13300 7550 14200 7550
+Wire Wire Line
+	12800 7050 12800 7550
+Connection ~ 12800 7550
+Wire Wire Line
+	14900 7700 14900 7350
+Wire Wire Line
+	12050 7150 12050 7050
+Connection ~ 12050 7050
+Wire Wire Line
+	12050 7050 12800 7050
+Wire Wire Line
+	15200 9100 14900 9100
+Wire Wire Line
+	14900 8300 15400 8300
+Wire Wire Line
+	15400 8200 14900 8200
+Wire Wire Line
+	14900 8100 15400 8100
+Wire Wire Line
+	11400 9650 15200 9650
+Wire Wire Line
+	12450 7350 14900 7350
+$Comp
+L Connector_Header:PIN_HEADER_2X17_2.54 X7
+U 1 1 5EA5CA52
+P 14200 7700
+F 0 "X7" H 14550 7972 50  0000 C CNN
+F 1 "PIN_HEADER_2X17_2.54" H 14550 7881 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical" H 14700 5300 50  0001 C CIN
+F 3 "" H 14400 8000 50  0001 C CNN
+	1    14200 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 8300 12400 7850
+Wire Wire Line
+	12400 8300 12800 8300
+Connection ~ 12800 8300
+Connection ~ 12400 7850
+Wire Wire Line
+	12400 7850 12150 7850
+Wire Wire Line
+	13700 7800 13700 8850
+Wire Wire Line
+	13700 8850 11500 8850
+Wire Wire Line
+	11500 8850 11500 8000
+Wire Wire Line
+	11500 8000 11350 8000
+Wire Wire Line
+	13700 7800 14200 7800
+$Comp
+L Connector_Header:A2541WV-2P X8
+U 1 1 5E289CC7
+P 2650 6500
+F 0 "X8" H 2842 6185 50  0000 C CNN
+F 1 "COM" H 2842 6276 50  0000 C CNN
+F 2 "Connector_Header:PinHeader_1x02_P2.54mm_Vertical" H 3000 6050 50  0001 C CIN
+F 3 "https://lcsc.com/product-detail/Pin-Header-Female-Header_Changjiang-Connectors-A2541WV-4P_C225479.html" H 2850 6800 50  0001 C CNN
+F 4 "Changjiang Connectors" H 2900 6250 50  0001 C CIN "Manufacturer"
+	1    2650 6500
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

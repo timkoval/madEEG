@@ -1,6 +1,6 @@
 # madEEG
 
-This project is a fork and reborn of an old project called "[OpenEEG](http://openeeg.sourceforge.net/doc/)".
+This project is a fork and rebirth of an old project called "[OpenEEG](http://openeeg.sourceforge.net/doc/)".
 
 The main feature of this project is that it uses currently available SMD components. Moreover, in the future I'm planning to try to make it cheaper using DSP instead of amplifier filters where it is possible.
 
